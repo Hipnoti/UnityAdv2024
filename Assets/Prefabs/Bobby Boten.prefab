@@ -169,6 +169,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  agentAnimator: {fileID: 0}
+  moveOnGameStart: 1
+  maxHP: 100
+  currentHP: 0
 --- !u!195 &302780652581049010
 NavMeshAgent:
   m_ObjectHideFlags: 0
