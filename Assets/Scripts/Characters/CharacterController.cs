@@ -4,13 +4,21 @@ using System.Collections.Generic;
 using Unity.AI.Navigation;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 public class CharacterController : MonoBehaviour
 {
-    private const string speedAnimatorParameter = "Speed";
-    private const string fallAnimatorTrigger = "Fall";
+    private readonly int speedAnimatorParameter = Animator.StringToHash("Speed");
+    private readonly int fallAnimatorTrigger = Animator.StringToHash("Fall");
     private const int hurtLayerIndex = 1;
     private const int mudAreaID = 3;
+
+    public UnityEvent onTakeDamageEvent;
+
+    public int CurrentHP
+    {
+        get { return currentHP; }
+    }
     
     [Header("Navigation")]
     [SerializeField] private NavMeshAgent navMeshAgent;
@@ -47,6 +55,14 @@ public class CharacterController : MonoBehaviour
         isMoving = shouldMove;
         navMeshAgent.enabled = shouldMove;
     }
+
+    public void TakeDamage(int damageAmount)
+    {
+        currentHP -= damageAmount;
+        float healthPercent = 1 - (float)currentHP / maxHP;
+        agentAnimator.SetLayerWeight(hurtLayerIndex,healthPercent);
+        onTakeDamageEvent.Invoke();
+    }
     
     private void Start()
     { 
@@ -72,9 +88,13 @@ public class CharacterController : MonoBehaviour
             navMeshAgent.SetDestination(pathWaypoints[currentWaypointIndex].position);
         }
 
-        // float healthPercent = 1 - (float)currentHP / maxHP;
-        // agentAnimator.SetLayerWeight(hurtLayerIndex,healthPercent);
+      
     }
 
+    [ContextMenu("Take Damage")]
+    private void TakeDamageTest()
+    {
+        TakeDamage(20);
+    }
   
 }
