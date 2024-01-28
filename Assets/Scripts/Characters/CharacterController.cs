@@ -8,6 +8,7 @@ using UnityEngine.Events;
 
 public class CharacterController : MonoBehaviour
 {
+    public const string CHARACTER_TAG = "PlayerCharacter";
     private readonly int speedAnimatorParameter = Animator.StringToHash("Speed");
     private readonly int fallAnimatorTrigger = Animator.StringToHash("Fall");
     private const int hurtLayerIndex = 1;
