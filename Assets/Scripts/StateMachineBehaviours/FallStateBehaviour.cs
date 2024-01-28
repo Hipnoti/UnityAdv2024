@@ -10,6 +10,6 @@ public class FallStateBehaviour : StateMachineBehaviour
    {
       base.OnStateEnter(animator, stateInfo, layerIndex, controller);
       //DEAR GOD GET COMPONENT. Hanz, get the flamethrower.
-      animator.GetComponent<CharacterController>().ShowFallEffect();
+      animator.GetComponent<PlayerCharacterController>().ShowFallEffect();
    }
 }

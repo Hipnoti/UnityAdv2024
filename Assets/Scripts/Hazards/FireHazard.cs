@@ -6,13 +6,15 @@ using UnityEngine.Events;
 
 public class FireHazard : MonoBehaviour
 {
+    public int Damage => damage;
+    
     public UnityEvent onPlayerEntered;
-    [SerializeField] private float damage = 10f;
+    [SerializeField] private int damage = 10;
     
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag(CharacterController.CHARACTER_TAG))
+        if (other.gameObject.CompareTag(PlayerCharacterController.CHARACTER_TAG))
         {
             Debug.Log("Player entered this hazard");
             onPlayerEntered.Invoke();

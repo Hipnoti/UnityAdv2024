@@ -8,7 +8,7 @@ public class UIManager : MonoBehaviour
 {
     public TextMeshProUGUI hpText;
 
-    [SerializeField] private CharacterController bobby;
+    [SerializeField] private PlayerCharacterController bobby;
     
     private void Start()
     {

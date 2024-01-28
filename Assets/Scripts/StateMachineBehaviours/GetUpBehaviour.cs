@@ -8,6 +8,6 @@ public class GetUpBehaviour : StateMachineBehaviour
     {
         base.OnStateExit(animator, stateInfo, layerIndex);
         //DEAR GOD GET COMPONENT. Hanz, get the flamethrower.
-        animator.GetComponent<CharacterController>().ToggleMoving(true);
+        animator.GetComponent<PlayerCharacterController>().ToggleMoving(true);
     }
 }

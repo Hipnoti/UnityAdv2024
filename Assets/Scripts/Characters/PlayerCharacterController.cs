@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
 
-public class CharacterController : MonoBehaviour
+public class PlayerCharacterController : MonoBehaviour
 {
     public const string CHARACTER_TAG = "PlayerCharacter";
     private readonly int speedAnimatorParameter = Animator.StringToHash("Speed");

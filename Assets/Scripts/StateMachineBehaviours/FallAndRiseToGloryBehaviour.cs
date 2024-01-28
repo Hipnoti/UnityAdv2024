@@ -8,7 +8,7 @@ public class FallAndRiseToGloryBehaviour : StateMachineBehaviour
     {
         base.OnStateMachineEnter(animator, stateMachinePathHash);
         //DEAR GOD GET COMPONENT. Hanz, get the flamethrower.
-        animator.GetComponent<CharacterController>().ShowFallEffect();
+        animator.GetComponent<PlayerCharacterController>().ShowFallEffect();
         
     }
 
@@ -16,7 +16,7 @@ public class FallAndRiseToGloryBehaviour : StateMachineBehaviour
     {
         base.OnStateMachineExit(animator, stateMachinePathHash);
         //DEAR GOD GET COMPONENT. Hanz, get the flamethrower.
-        animator.GetComponent<CharacterController>().ToggleMoving(true);
+        animator.GetComponent<PlayerCharacterController>().ToggleMoving(true);
     }
     
 }
