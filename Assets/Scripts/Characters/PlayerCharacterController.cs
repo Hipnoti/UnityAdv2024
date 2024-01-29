@@ -16,7 +16,7 @@ public class PlayerCharacterController : MonoBehaviour
 
     public UnityEvent onTakeDamageEvent;
 
-    public int CurrentHP
+    public uint CurrentHP
     {
         get { return currentHP; }
     }
@@ -28,8 +28,8 @@ public class PlayerCharacterController : MonoBehaviour
     [SerializeField] private bool moveOnGameStart = false;
 
     [Header("Health")] 
-    [SerializeField] private int maxHP;
-    [SerializeField] private int currentHP;
+    [SerializeField] private uint maxHP;
+    [SerializeField] private uint currentHP;
 
     [Header("Graphics")]
     [SerializeField] private ParticleSystem fallEffect;
@@ -57,7 +57,7 @@ public class PlayerCharacterController : MonoBehaviour
         navMeshAgent.enabled = shouldMove;
     }
 
-    public void TakeDamage(int damageAmount)
+    public void TakeDamage(uint damageAmount)
     {
         currentHP -= damageAmount;
         float healthPercent = 1 - (float)currentHP / maxHP;

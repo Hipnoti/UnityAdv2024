@@ -6,16 +6,19 @@ using UnityEngine.Serialization;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private PlayerCharacterController playerCharacterController;
-    [SerializeField] private FireHazard fireHazard;
+    [SerializeField] private FireHazard[] fireHazards;
 
     private void Start()
     {
-        fireHazard.onPlayerEntered.AddListener(HandleCharacterEnteredFire);
+        foreach (FireHazard fireHazard in fireHazards)
+        {
+            fireHazard.onCharacterEnteredAction += HandleCharacterEnteredFire;
+        }
+      
     }
 
-    public void HandleCharacterEnteredFire()
+    public void HandleCharacterEnteredFire(FireEnteredEventArgs args)
     {
-        playerCharacterController.TakeDamage(fireHazard.Damage);
+        args.targetCharacterController.TakeDamage(args.damageDealt);
     }
 }
