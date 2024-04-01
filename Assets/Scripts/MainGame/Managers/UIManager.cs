@@ -10,13 +10,15 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private PlayerCharacterController bobby;
     
+    public void RefreshHPText()
+    {
+        hpText.text = bobby.CurrentHP.ToString();
+    }
+    
     private void Start()
     {
         bobby.onTakeDamageEvent.AddListener(RefreshHPText);
     }
 
-    private void RefreshHPText()
-    {
-        hpText.text = bobby.CurrentHP.ToString();
-    }
+    
 }

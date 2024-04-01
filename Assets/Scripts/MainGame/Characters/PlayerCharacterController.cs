@@ -19,7 +19,10 @@ public class PlayerCharacterController : MonoBehaviour
     public uint CurrentHP
     {
         get { return currentHP; }
+        set { currentHP = value; }
     }
+    
+    public int currentWaypointIndex = 0;
     
     [Header("Navigation")]
     [SerializeField] private NavMeshAgent navMeshAgent;
@@ -35,7 +38,6 @@ public class PlayerCharacterController : MonoBehaviour
     [SerializeField] private ParticleSystem fallEffect;
     
     private bool hasSpecialTevaNaot = true;
-    private int currentWaypointIndex = 0;
     private bool isMoving;
 
     public void ShowFallEffect()
@@ -64,6 +66,11 @@ public class PlayerCharacterController : MonoBehaviour
         agentAnimator.SetLayerWeight(hurtLayerIndex,healthPercent);
         onTakeDamageEvent.Invoke();
     }
+
+    public void SetDestination()
+    {
+        navMeshAgent.SetDestination(pathWaypoints[currentWaypointIndex].position);
+    }
     
     private void Start()
     { 
@@ -86,12 +93,11 @@ public class PlayerCharacterController : MonoBehaviour
             currentWaypointIndex++;
             if (currentWaypointIndex >= pathWaypoints.Length)
                 currentWaypointIndex = 0;
-            navMeshAgent.SetDestination(pathWaypoints[currentWaypointIndex].position);
+         SetDestination();
         }
-
-      
     }
 
+    
     [ContextMenu("Take Damage")]
     private void TakeDamageTest()
     {
