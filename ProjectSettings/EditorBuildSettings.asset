@@ -11,4 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prefab Variants Scene/Prefab Variants Scene.unity
     guid: d243c29dfd062e943b5e38c5e180063f
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 34080d2027876864eb546c52b7754d21,
+      type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: a6ddb170452f60c42bf72e1f405e3033,
+      type: 2}

@@ -5,7 +5,11 @@ using Unity.AI.Navigation;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
+
+public enum MovementType { Patrol, Input}
 public class PlayerCharacterController : MonoBehaviour
 {
     public const string CHARACTER_TAG = "PlayerCharacter";
@@ -15,7 +19,7 @@ public class PlayerCharacterController : MonoBehaviour
     private const int mudAreaID = 3;
 
     public UnityEvent onTakeDamageEvent;
-
+    
     public uint CurrentHP
     {
         get { return currentHP; }
@@ -24,11 +28,16 @@ public class PlayerCharacterController : MonoBehaviour
     
     public int currentWaypointIndex = 0;
     
-    [Header("Navigation")]
+    [Header("Input")]
+    public InputActionAsset inputActionAsset;
+    
+    [Header("Navigation")] 
+    [SerializeField] private MovementType movementType;
     [SerializeField] private NavMeshAgent navMeshAgent;
     [SerializeField] private Transform[] pathWaypoints;
     [SerializeField] private Animator agentAnimator;
     [SerializeField] private bool moveOnGameStart = false;
+    [SerializeField] private Camera mainCamera;
 
     [Header("Health")] 
     [SerializeField] private uint maxHP;
@@ -39,6 +48,12 @@ public class PlayerCharacterController : MonoBehaviour
     
     private bool hasSpecialTevaNaot = true;
     private bool isMoving;
+    
+    //Saving the mouse instance
+  //  private Mouse currentMouse;
+
+    private InputAction moveButtonAction;
+    private InputAction positionAction;
 
     public void ShowFallEffect()
     {
@@ -74,30 +89,89 @@ public class PlayerCharacterController : MonoBehaviour
     
     private void Start()
     { 
+      //  currentMouse = Mouse.current;
+        
+        InputActionMap actionMap = inputActionAsset.FindActionMap("Player");
+        actionMap.Enable();
+        moveButtonAction = actionMap.FindAction("Move");
+        if (moveButtonAction != null)
+        {
+            moveButtonAction.performed += MoveButtonActionOnPerformed;
+        }
+        
+        positionAction = inputActionAsset.FindAction("PointerPosition");
         if(hasSpecialTevaNaot)
            navMeshAgent.SetAreaCost(mudAreaID, 0.2f);
-        if (moveOnGameStart)
+        if (movementType == MovementType.Patrol)
         {
-            ToggleMoving(true);
-            navMeshAgent.SetDestination(pathWaypoints[currentWaypointIndex].position);
+            if (moveOnGameStart)
+            {
+                ToggleMoving(true);
+                navMeshAgent.SetDestination(pathWaypoints[currentWaypointIndex].position);
+            }
         }
 
         currentHP = maxHP;
     }
 
+
     private void Update()
     {
         agentAnimator.SetFloat(speedAnimatorParameter, navMeshAgent.velocity.magnitude);
-        if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
+        if (movementType == MovementType.Patrol)
         {
-            currentWaypointIndex++;
-            if (currentWaypointIndex >= pathWaypoints.Length)
-                currentWaypointIndex = 0;
-         SetDestination();
+            if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
+            {
+                currentWaypointIndex++;
+                if (currentWaypointIndex >= pathWaypoints.Length)
+                    currentWaypointIndex = 0;
+                SetDestination();
+            }
         }
+        
+        //Option 1
+        // if (movementType == MovementType.Input)
+        // {
+        //     //same thing for keyboard
+        //     //Keyboard.current
+        //     //Gamepad.current
+        //     //Pen.current etc. etc.
+        //     if (currentMouse.leftButton.wasPressedThisFrame)
+        //     {
+        //         TryRayCastMove(currentMouse.position.ReadValue());
+        //     }
+        // }
+        //
+        // if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        // {
+        //     //Activate the pause menu
+        // }
+        
     }
 
     
+    //Option 3
+    public void MoveButtonActionOnPerformed(InputAction.CallbackContext callbackContext)
+    {
+        TryRayCastMove(positionAction.ReadValue<Vector2>());
+    }
+
+    public void PauseGame(InputAction.CallbackContext callbackContext)
+    {
+        Debug.Log("Game paused! (Not really)");
+    }
+
+    private void TryRayCastMove(Vector3 rayCastPosition)
+    {
+        Debug.Log("Ray casting");
+        RaycastHit hit;
+        Ray ray = mainCamera.ScreenPointToRay(rayCastPosition);
+        if (Physics.Raycast(ray, out hit))
+        {
+            navMeshAgent.SetDestination(hit.point);
+        }
+    }
+
     [ContextMenu("Take Damage")]
     private void TakeDamageTest()
     {

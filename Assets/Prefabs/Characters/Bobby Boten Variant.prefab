@@ -2066,6 +2066,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bobby Boten Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5262520664344185964, guid: 4696edac668eeb54aa22cfe47b655f32,
+        type: 3}
+      propertyPath: movementType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5262520664344185964, guid: 4696edac668eeb54aa22cfe47b655f32,
+        type: 3}
+      propertyPath: inputActionAsset
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: 056f6714eb794fa4582d4c04f8619268,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
