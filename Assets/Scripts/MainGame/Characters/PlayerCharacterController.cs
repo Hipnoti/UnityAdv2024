@@ -14,8 +14,8 @@ public class PlayerCharacterController : MonoBehaviour
     [SerializeField] private NavMeshAgent navMeshAgent;
     [SerializeField] private Transform waypoint; 
     [SerializeField] private Transform[] pathWaypoints;
-    
-     private bool isMoving;
+
+     private bool isMoving = true;
      private int currentWaypointIndex = 0;
      
      public void ToggleMoving(bool shouldMove)
@@ -32,22 +32,27 @@ public class PlayerCharacterController : MonoBehaviour
      
     private void Start()
     {
+        ToggleMoving(true);
         if (waypoint)
         {
             SetDestination(waypoint);
-            ToggleMoving(true);
         }
     }
 
-    // private void Update()
-    // {
-    //     if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
-    //     {
-    //         currentWaypointIndex++;
-    //         if (currentWaypointIndex >= pathWaypoints.Length)
-    //             currentWaypointIndex = 0;
-    //         SetDestination(pathWaypoints[currentWaypointIndex]);
-    //     }
-    // }
+    private void Update()
+    {
+        // if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
+        // {
+        //       Debug.Log("Reached Waypoint!");
+        //       ToggleMoving(false);
+        // }
+        // if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
+        // {
+        //     currentWaypointIndex++;
+        //     if (currentWaypointIndex >= pathWaypoints.Length)
+        //         currentWaypointIndex = 0;
+        //     SetDestination(pathWaypoints[currentWaypointIndex]);
+        // }
+    }
   
 }
