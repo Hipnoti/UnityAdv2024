@@ -6,17 +6,17 @@ public class FallAndRiseToGloryBehaviour : StateMachineBehaviour
 {
     public override void OnStateMachineEnter(Animator animator, int stateMachinePathHash)
     {
-        base.OnStateMachineEnter(animator, stateMachinePathHash);
-        //DEAR GOD GET COMPONENT. Hanz, get the flamethrower.
-        animator.GetComponent<PlayerCharacterController>().ShowFallEffect();
+        // base.OnStateMachineEnter(animator, stateMachinePathHash);
+        // //DEAR GOD GET COMPONENT. Hanz, get the flamethrower.
+        // animator.GetComponent<PlayerCharacterController>().ShowFallEffect();
         
     }
 
     public override void OnStateMachineExit(Animator animator, int stateMachinePathHash)
     {
-        base.OnStateMachineExit(animator, stateMachinePathHash);
-        //DEAR GOD GET COMPONENT. Hanz, get the flamethrower.
-        animator.GetComponent<PlayerCharacterController>().ToggleMoving(true);
+        // base.OnStateMachineExit(animator, stateMachinePathHash);
+        // //DEAR GOD GET COMPONENT. Hanz, get the flamethrower.
+        // animator.GetComponent<PlayerCharacterController>().ToggleMoving(true);
     }
     
 }

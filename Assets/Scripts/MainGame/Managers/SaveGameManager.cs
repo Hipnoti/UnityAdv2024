@@ -16,22 +16,22 @@ public class SaveGameManager : MonoBehaviour
     [ContextMenu("Save!")]
     public void SaveGame()
     {
-        serializedSaveGame = new SerializedSaveGame();
-        // serializedSaveGame.playerPosition = gameManager.playerCharacterController.transform.position;
-        // serializedSaveGame.playerRotation = gameManager.playerCharacterController.transform.eulerAngles;
-        serializedSaveGame.playerPositionX = gameManager.playerCharacterController.transform.position.x;
-        serializedSaveGame.playerPositionY = gameManager.playerCharacterController.transform.position.y;
-        serializedSaveGame.playerPositionZ = gameManager.playerCharacterController.transform.position.z;
-
-        serializedSaveGame.playerRotationX = gameManager.playerCharacterController.transform.eulerAngles.x;
-        serializedSaveGame.playerRotationY = gameManager.playerCharacterController.transform.eulerAngles.y;
-        serializedSaveGame.playerRotationZ = gameManager.playerCharacterController.transform.eulerAngles.z;
-
-        serializedSaveGame.playerHP = gameManager.playerCharacterController.CurrentHP;
-        serializedSaveGame.currentWaypointIndex = gameManager.playerCharacterController.currentWaypointIndex;
-
-        //SaveToJson();
-        SaveToBinary();
+        // serializedSaveGame = new SerializedSaveGame();
+        // // serializedSaveGame.playerPosition = gameManager.playerCharacterController.transform.position;
+        // // serializedSaveGame.playerRotation = gameManager.playerCharacterController.transform.eulerAngles;
+        // serializedSaveGame.playerPositionX = gameManager.playerCharacterController.transform.position.x;
+        // serializedSaveGame.playerPositionY = gameManager.playerCharacterController.transform.position.y;
+        // serializedSaveGame.playerPositionZ = gameManager.playerCharacterController.transform.position.z;
+        //
+        // serializedSaveGame.playerRotationX = gameManager.playerCharacterController.transform.eulerAngles.x;
+        // serializedSaveGame.playerRotationY = gameManager.playerCharacterController.transform.eulerAngles.y;
+        // serializedSaveGame.playerRotationZ = gameManager.playerCharacterController.transform.eulerAngles.z;
+        //
+        // serializedSaveGame.playerHP = gameManager.playerCharacterController.CurrentHP;
+        // serializedSaveGame.currentWaypointIndex = gameManager.playerCharacterController.currentWaypointIndex;
+        //
+        // //SaveToJson();
+        // SaveToBinary();
     }
 
     [ContextMenu("Load!")]
@@ -39,19 +39,19 @@ public class SaveGameManager : MonoBehaviour
     {
         //LoadFromJson();
 
-        LoadFromBinary();
-
-        // gameManager.playerCharacterController.transform.position = serializedSaveGame.playerPosition;
-        // gameManager.playerCharacterController.transform.eulerAngles = serializedSaveGame.playerRotation;
-        gameManager.playerCharacterController.transform.position = new Vector3(serializedSaveGame.playerPositionX,
-            serializedSaveGame.playerPositionY, serializedSaveGame.playerPositionZ);
-        gameManager.playerCharacterController.transform.eulerAngles = new Vector3(serializedSaveGame.playerRotationX,
-            serializedSaveGame.playerRotationY, serializedSaveGame.playerRotationZ);
-        gameManager.playerCharacterController.CurrentHP = serializedSaveGame.playerHP;
-        uiManager.RefreshHPText();
-        gameManager.playerCharacterController.currentWaypointIndex = serializedSaveGame.currentWaypointIndex;
-
-        gameManager.playerCharacterController.SetDestination();
+        // LoadFromBinary();
+        //
+        // // gameManager.playerCharacterController.transform.position = serializedSaveGame.playerPosition;
+        // // gameManager.playerCharacterController.transform.eulerAngles = serializedSaveGame.playerRotation;
+        // gameManager.playerCharacterController.transform.position = new Vector3(serializedSaveGame.playerPositionX,
+        //     serializedSaveGame.playerPositionY, serializedSaveGame.playerPositionZ);
+        // gameManager.playerCharacterController.transform.eulerAngles = new Vector3(serializedSaveGame.playerRotationX,
+        //     serializedSaveGame.playerRotationY, serializedSaveGame.playerRotationZ);
+        // gameManager.playerCharacterController.CurrentHP = serializedSaveGame.playerHP;
+        // uiManager.RefreshHPText();
+        // gameManager.playerCharacterController.currentWaypointIndex = serializedSaveGame.currentWaypointIndex;
+        //
+        // gameManager.playerCharacterController.SetDestination();
     }
 
     private void SaveToJson()

@@ -28,15 +28,15 @@ public class FireHazard : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag(PlayerCharacterController.CHARACTER_TAG))
-        {
-            Debug.Log("Player entered this hazard");
-            onCharacterEntered?.Invoke(new FireEnteredEventArgs
-            {
-                damageDealt = Damage, 
-                targetCharacterController = other.GetComponent<PlayerCharacterController>()
-            });
-        }
+        // if (other.gameObject.CompareTag(PlayerCharacterController.CHARACTER_TAG))
+        // {
+        //     Debug.Log("Player entered this hazard");
+        //     onCharacterEntered?.Invoke(new FireEnteredEventArgs
+        //     {
+        //         damageDealt = Damage, 
+        //         targetCharacterController = other.GetComponent<PlayerCharacterController>()
+        //     });
+        // }
     }
 }
 
