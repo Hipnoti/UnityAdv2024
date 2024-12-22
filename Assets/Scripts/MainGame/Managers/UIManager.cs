@@ -9,15 +9,22 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI hpText;
 
     [SerializeField] private PlayerCharacterController bobby;
+    [SerializeField] private GameObject heartIcon;
     
-    // public void RefreshHPText()
-    // {
-    //     hpText.text = bobby.CurrentHP.ToString();
-    // }
+    public void RefreshHPText(int newHP)
+    {
+        hpText.text = newHP.ToString();
+    }
     
-    // private void Start()
+    private void Start()
+    {
+        hpText.text = bobby.Hp.ToString();
+        bobby.onTakeDamageEvent.AddListener(RefreshHPText);
+    }
+
+    // private void RemoveHeart()
     // {
-    //     bobby.onTakeDamageEvent.AddListener(RefreshHPText);
+    //     heartIcon.SetActive(false);
     // }
 
     

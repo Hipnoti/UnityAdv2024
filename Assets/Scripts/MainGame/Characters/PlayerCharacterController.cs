@@ -9,7 +9,9 @@ using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 public class PlayerCharacterController : MonoBehaviour
-{
+{ 
+    public UnityEvent<int> onTakeDamageEvent;
+   // public event UnityAction  onTakeDamageEventAction;
     [Header("Navigation")] 
     [SerializeField] private NavMeshAgent navMeshAgent;
     [SerializeField] private Transform waypoint; 
@@ -17,7 +19,12 @@ public class PlayerCharacterController : MonoBehaviour
 
      private bool isMoving = true;
      private int currentWaypointIndex = 0;
+
+     private bool hasBloodyBoots = true;
+     public int Hp => hp;
      
+     private int hp = 100;
+    
      public void ToggleMoving(bool shouldMove)
      {
          isMoving = shouldMove;
@@ -30,14 +37,36 @@ public class PlayerCharacterController : MonoBehaviour
              navMeshAgent.SetDestination(targetTransformWaypoint.position);
      }
      
+     public void TakeDamage(int damageAmount)
+     {
+         hp -= damageAmount;
+         onTakeDamageEvent.Invoke(hp);
+     }
+     
     private void Start()
     {
+        SetMudAreaCost();
         ToggleMoving(true);
         if (waypoint)
         {
             SetDestination(waypoint);
         }
     }
+
+    private void SetMudAreaCost()
+    {
+        if (hasBloodyBoots)
+        {
+            navMeshAgent.SetAreaCost(3, 1);
+        }
+    }
+
+    [ContextMenu("Take Damage Test")]
+    private void TakeDamageTesting()
+    {
+        TakeDamage(10);
+    }
+    
 
     private void Update()
     {

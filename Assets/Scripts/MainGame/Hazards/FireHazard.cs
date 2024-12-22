@@ -7,19 +7,18 @@ using UnityEngine.Serialization;
 
 public class FireHazard : MonoBehaviour
 {
-    public uint Damage => fireHazardData.GetRandomFireDamage();
-
+    [SerializeField] private int damageAmount = 10;
     public event UnityAction<FireEnteredEventArgs> onCharacterEnteredAction;
     
-    [SerializeField] private FireHazardScriptableObject fireHazardData;
+    //[SerializeField] private FireHazardScriptableObject fireHazardData;
 
     [SerializeField]
     private UnityEvent<FireEnteredEventArgs> onCharacterEntered = new UnityEvent<FireEnteredEventArgs>();
 
-    public void SetScriptableData(FireHazardScriptableObject fireHazardScriptableObject)
-    {
-        fireHazardData = fireHazardScriptableObject;
-    }
+    // public void SetScriptableData(FireHazardScriptableObject fireHazardScriptableObject)
+    // {
+    //     fireHazardData = fireHazardScriptableObject;
+    // }
     private void Start()
     { 
         if(onCharacterEnteredAction != null)
@@ -28,20 +27,20 @@ public class FireHazard : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // if (other.gameObject.CompareTag(PlayerCharacterController.CHARACTER_TAG))
-        // {
-        //     Debug.Log("Player entered this hazard");
-        //     onCharacterEntered?.Invoke(new FireEnteredEventArgs
-        //     {
-        //         damageDealt = Damage, 
-        //         targetCharacterController = other.GetComponent<PlayerCharacterController>()
-        //     });
-        // }
+        if (other.gameObject.CompareTag("PlayerCharacter"))
+        {
+            Debug.Log("Player entered this hazard");
+            onCharacterEntered?.Invoke(new FireEnteredEventArgs
+            {
+                damageDealt = damageAmount,
+                targetCharacterController = other.GetComponent<PlayerCharacterController>()
+            });
+        }
     }
 }
 
 public struct FireEnteredEventArgs
 {
-    public uint damageDealt;
+    public int damageDealt;
     public PlayerCharacterController targetCharacterController;
 }
