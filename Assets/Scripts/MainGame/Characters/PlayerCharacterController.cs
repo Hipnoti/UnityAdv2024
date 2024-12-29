@@ -10,8 +10,9 @@ using UnityEngine.Serialization;
 
 public class PlayerCharacterController : MonoBehaviour
 { 
-    public UnityEvent<int> onTakeDamageEvent;
-   // public event UnityAction  onTakeDamageEventAction;
+    public event UnityAction<int> onTakeDamageEventAction;
+    [SerializeField] private UnityEvent<int> onTakeDamageEvent;
+    
     [Header("Navigation")] 
     [SerializeField] private NavMeshAgent navMeshAgent;
     [SerializeField] private Transform waypoint; 
@@ -41,6 +42,7 @@ public class PlayerCharacterController : MonoBehaviour
      {
          hp -= damageAmount;
          onTakeDamageEvent.Invoke(hp);
+         onTakeDamageEventAction.Invoke(hp);
      }
      
     private void Start()

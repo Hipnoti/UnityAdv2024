@@ -19,27 +19,29 @@ public class FireHazard : MonoBehaviour
     // {
     //     fireHazardData = fireHazardScriptableObject;
     // }
-    private void Start()
-    { 
-        if(onCharacterEnteredAction != null)
-           onCharacterEntered.AddListener(onCharacterEnteredAction);
-    }
+    // private void Start()
+    // { 
+    //     if(onCharacterEnteredAction != null)
+    //        onCharacterEntered.AddListener(onCharacterEnteredAction);
+    // }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("PlayerCharacter"))
         {
             Debug.Log("Player entered this hazard");
-            onCharacterEntered?.Invoke(new FireEnteredEventArgs
+            FireEnteredEventArgs fireEnteredEventArgs = new FireEnteredEventArgs
             {
                 damageDealt = damageAmount,
                 targetCharacterController = other.GetComponent<PlayerCharacterController>()
-            });
+            };
+            onCharacterEntered?.Invoke(fireEnteredEventArgs);
+            onCharacterEnteredAction.Invoke(fireEnteredEventArgs);
         }
     }
 }
 
-public struct FireEnteredEventArgs
+public class FireEnteredEventArgs
 {
     public int damageDealt;
     public PlayerCharacterController targetCharacterController;

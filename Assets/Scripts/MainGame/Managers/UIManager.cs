@@ -15,11 +15,15 @@ public class UIManager : MonoBehaviour
     {
         hpText.text = newHP.ToString();
     }
-    
+
+    private void Awake()
+    {
+        bobby.onTakeDamageEventAction += RefreshHPText;
+    }
+
     private void Start()
     {
         hpText.text = bobby.Hp.ToString();
-        bobby.onTakeDamageEvent.AddListener(RefreshHPText);
     }
 
     // private void RemoveHeart()
