@@ -4,11 +4,12 @@
     menuName = "Obstacles/Fire Hazard Data", order = 0)]
 public class FireHazardScriptableObject : ScriptableObject
 {
-    [SerializeField] private int minimumDamage;
-    [SerializeField] private int maximumDamage;
-
-    public int GetRandomFireDamage()
-    {
-        return Random.Range(minimumDamage, maximumDamage + 1);
-    }
+    public int damage;
+    // [SerializeField] private int minimumDamage;
+    // [SerializeField] private int maximumDamage;
+    //
+    // public int GetRandomFireDamage()
+    // {
+    //     return Random.Range(minimumDamage, maximumDamage + 1);
+    // }
 }

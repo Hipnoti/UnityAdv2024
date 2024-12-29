@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI hpText;
 
     [SerializeField] private PlayerCharacterController bobby;
-    [SerializeField] private GameObject heartIcon;
+  //  [SerializeField] private GameObject heartIcon;
     
     public void RefreshHPText(int newHP)
     {

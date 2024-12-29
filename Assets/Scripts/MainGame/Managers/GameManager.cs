@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 public class GameManager : MonoBehaviour
 {
     public PlayerCharacterController playerCharacterController;
-    [SerializeField] private FireHazardScriptableObject[] fireHazardScriptableObjects;
+   // [SerializeField] private FireHazardScriptableObject[] fireHazardScriptableObjects;
     [SerializeField] private FireHazard[] fireHazards;
 
     private void Start()

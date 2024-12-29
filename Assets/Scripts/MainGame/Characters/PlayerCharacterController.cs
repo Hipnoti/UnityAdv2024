@@ -9,50 +9,69 @@ using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
 public class PlayerCharacterController : MonoBehaviour
-{ 
+{
     public event UnityAction<int> onTakeDamageEventAction;
     [SerializeField] private UnityEvent<int> onTakeDamageEvent;
-    
+
     [Header("Navigation")] 
     [SerializeField] private NavMeshAgent navMeshAgent;
-    [SerializeField] private Transform waypoint; 
+
+    [SerializeField] private Transform waypoint;
     [SerializeField] private Transform[] pathWaypoints;
 
-     private bool isMoving = true;
-     private int currentWaypointIndex = 0;
+    public int Hp
+    {
+        get => hp;
+        set => hp = value;
+    }
 
-     private bool hasBloodyBoots = true;
-     public int Hp => hp;
-     
-     private int hp = 100;
-    
-     public void ToggleMoving(bool shouldMove)
-     {
-         isMoving = shouldMove;
-         if(navMeshAgent) navMeshAgent.enabled = shouldMove;
-     }
+    public int CurrentWaypointIndex
+    {
+        get => currentWaypointIndex;
+        set => currentWaypointIndex = value;
+    }
 
-     public void SetDestination(Transform targetTransformWaypoint)
-     {
-         if(navMeshAgent)
-             navMeshAgent.SetDestination(targetTransformWaypoint.position);
-     }
-     
-     public void TakeDamage(int damageAmount)
-     {
-         hp -= damageAmount;
-         onTakeDamageEvent.Invoke(hp);
-         onTakeDamageEventAction.Invoke(hp);
-     }
-     
+    private bool isMoving = true;
+    private int currentWaypointIndex = 0;
+
+    private bool hasBloodyBoots = true;
+
+
+    private int hp = 100;
+
+    public void ToggleMoving(bool shouldMove)
+    {
+        isMoving = shouldMove;
+        if (navMeshAgent) navMeshAgent.enabled = shouldMove;
+    }
+
+    public void SetDestination(Transform targetTransformWaypoint)
+    {
+        if (navMeshAgent)
+            navMeshAgent.SetDestination(targetTransformWaypoint.position);
+    }
+
+    public void SetDestination(int waypointIndex)
+    {
+        SetDestination(pathWaypoints[waypointIndex]);
+    }
+
+    public void TakeDamage(int damageAmount)
+    {
+        hp -= damageAmount;
+        onTakeDamageEvent.Invoke(hp);
+        onTakeDamageEventAction.Invoke(hp);
+    }
+
     private void Start()
     {
         SetMudAreaCost();
         ToggleMoving(true);
-        if (waypoint)
-        {
-            SetDestination(waypoint);
-        }
+        SetDestination(pathWaypoints[0]);
+        // if (waypoint)
+        // {
+        //     SetDestination(waypoint);
+        // }
     }
 
     private void SetMudAreaCost()
@@ -68,7 +87,7 @@ public class PlayerCharacterController : MonoBehaviour
     {
         TakeDamage(10);
     }
-    
+
 
     private void Update()
     {
@@ -77,13 +96,12 @@ public class PlayerCharacterController : MonoBehaviour
         //       Debug.Log("Reached Waypoint!");
         //       ToggleMoving(false);
         // }
-        // if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
-        // {
-        //     currentWaypointIndex++;
-        //     if (currentWaypointIndex >= pathWaypoints.Length)
-        //         currentWaypointIndex = 0;
-        //     SetDestination(pathWaypoints[currentWaypointIndex]);
-        // }
+        if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
+        {
+            currentWaypointIndex++;
+            if (currentWaypointIndex >= pathWaypoints.Length)
+                currentWaypointIndex = 0;
+            SetDestination(pathWaypoints[currentWaypointIndex]);
+        }
     }
-  
 }
