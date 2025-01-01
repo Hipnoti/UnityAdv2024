@@ -4868,11 +4868,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 794181239830873258, guid: 917d8b68eb2c4c941a7303611e8c74c4,
         type: 3}
-      propertyPath: fireHazardData
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 794181239830873258, guid: 917d8b68eb2c4c941a7303611e8c74c4,
-        type: 3}
       propertyPath: onPlayerEntered.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -16382,11 +16377,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 794181239830873258, guid: 917d8b68eb2c4c941a7303611e8c74c4,
         type: 3}
-      propertyPath: fireHazardData
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 794181239830873258, guid: 917d8b68eb2c4c941a7303611e8c74c4,
-        type: 3}
       propertyPath: onPlayerEntered.m_PersistentCalls.m_Calls.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -19252,7 +19242,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpText: {fileID: 141644880}
   bobby: {fileID: 1833833223}
-  heartIcon: {fileID: 0}
 --- !u!114 &2136455733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19265,11 +19254,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06fb44a2a2621014dbe31688fc768920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCharacterController: {fileID: 0}
+  playerCharacterController: {fileID: 1833833223}
   fireHazardScriptableObjects:
-  - {fileID: 11400000, guid: cc97a1cd3a2bc694d8198cc44a2a458e, type: 2}
-  - {fileID: 11400000, guid: 675f9d211396ab247b2c2081f8115e4d, type: 2}
-  - {fileID: 11400000, guid: 29e5d4c1487e0d146bce5af696d2d734, type: 2}
+  - {fileID: 11400000, guid: 0864952d866a7eb4c921406f6b9b8497, type: 2}
+  - {fileID: 11400000, guid: 0864952d866a7eb4c921406f6b9b8497, type: 2}
+  - {fileID: 11400000, guid: 64cf5012ead0b7642a86b2e05a38938e, type: 2}
   fireHazards:
   - {fileID: 878030380}
   - {fileID: 1912252888}
@@ -19341,11 +19330,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 794181239830873258, guid: 917d8b68eb2c4c941a7303611e8c74c4,
-        type: 3}
-      propertyPath: fireHazardData
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 794181239830873258, guid: 917d8b68eb2c4c941a7303611e8c74c4,
         type: 3}
@@ -19786,6 +19770,11 @@ PrefabInstance:
       propertyPath: agentAnimator
       value: 
       objectReference: {fileID: 1833833221}
+    - target: {fileID: 5262520664344185964, guid: 4696edac668eeb54aa22cfe47b655f32,
+        type: 3}
+      propertyPath: pathWaypoints.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5262520664344185964, guid: 4696edac668eeb54aa22cfe47b655f32,
         type: 3}
       propertyPath: 'pathWaypoints.Array.data[0]'

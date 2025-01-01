@@ -20357,6 +20357,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCharacterController: {fileID: 64808986}
+  fireHazardScriptableObjects:
+  - {fileID: 11400000, guid: 64cf5012ead0b7642a86b2e05a38938e, type: 2}
   fireHazards:
   - {fileID: 878030380}
   - {fileID: 1912252888}

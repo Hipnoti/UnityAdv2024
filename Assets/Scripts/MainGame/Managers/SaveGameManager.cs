@@ -30,8 +30,8 @@ public class SaveGameManager : MonoBehaviour
         serializedSaveGame.playerHP = gameManager.playerCharacterController.Hp;
         serializedSaveGame.currentWaypointIndex = gameManager.playerCharacterController.CurrentWaypointIndex;
         
-       //     SaveToJson();
-         SaveToBinary();
+            SaveToJson();
+      //   SaveToBinary();
     }
 
     [ContextMenu("Load!")]
@@ -48,9 +48,10 @@ public class SaveGameManager : MonoBehaviour
          gameManager.playerCharacterController.transform.eulerAngles = new Vector3(serializedSaveGame.playerRotationX,
              serializedSaveGame.playerRotationY, serializedSaveGame.playerRotationZ);
          gameManager.playerCharacterController.Hp = serializedSaveGame.playerHP;
-         uiManager.RefreshHPText(gameManager.playerCharacterController.Hp);
-         gameManager.playerCharacterController.CurrentWaypointIndex = serializedSaveGame.currentWaypointIndex;
         
+         gameManager.playerCharacterController.CurrentWaypointIndex = serializedSaveGame.currentWaypointIndex;
+         //
+         uiManager.RefreshHPText(gameManager.playerCharacterController.Hp);
          gameManager.playerCharacterController.SetDestination(gameManager.playerCharacterController.CurrentWaypointIndex);
     }
 

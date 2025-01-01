@@ -7,10 +7,9 @@ using UnityEngine.Serialization;
 
 public class FireHazard : MonoBehaviour
 {
-    [SerializeField] private int damageAmount = 10;
     public event UnityAction<FireEnteredEventArgs> onCharacterEnteredAction;
     
-    //[SerializeField] private FireHazardScriptableObject fireHazardData;
+    [HideInInspector] public FireHazardScriptableObject fireHazardData;
 
     [SerializeField]
     private UnityEvent<FireEnteredEventArgs> onCharacterEntered = new UnityEvent<FireEnteredEventArgs>();
@@ -32,7 +31,7 @@ public class FireHazard : MonoBehaviour
             Debug.Log("Player entered this hazard");
             FireEnteredEventArgs fireEnteredEventArgs = new FireEnteredEventArgs
             {
-                damageDealt = damageAmount,
+                damageDealt = fireHazardData.GetRandomFireDamage(),
                 targetCharacterController = other.GetComponent<PlayerCharacterController>()
             };
             onCharacterEntered?.Invoke(fireEnteredEventArgs);

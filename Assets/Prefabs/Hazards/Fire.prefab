@@ -4624,6 +4624,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4734,6 +4737,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9426,7 +9432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247057fdf6fa1a5418c7f3153e703e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireHazardData: {fileID: 11400000, guid: 29e5d4c1487e0d146bce5af696d2d734, type: 2}
+  fireHazardData: {fileID: 11400000, guid: 0864952d866a7eb4c921406f6b9b8497, type: 2}
   onCharacterEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -9442,6 +9448,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -8458534580072001037, guid: 7ad1727355a5e084e892815db7d914ae,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: bf36a03e2a526364da1e274a7276ea4e, type: 3}
+  m_Resource: {fileID: 8300000, guid: bf36a03e2a526364da1e274a7276ea4e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -14178,6 +14185,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
