@@ -18,6 +18,8 @@ public class PlayerCharacterController : MonoBehaviour
 
     [SerializeField] private Transform waypoint;
     [SerializeField] private Transform[] pathWaypoints;
+    
+    [SerializeField] Animator animator;
 
     public int Hp
     {
@@ -91,11 +93,8 @@ public class PlayerCharacterController : MonoBehaviour
 
     private void Update()
     {
-        // if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
-        // {
-        //       Debug.Log("Reached Waypoint!");
-        //       ToggleMoving(false);
-        // }
+        // if(animator)
+        //     animator.SetFloat("Speed", (int) navMeshAgent.velocity.magnitude);
         if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
         {
             currentWaypointIndex++;

@@ -1155,6 +1155,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.076581396
       objectReference: {fileID: 0}
+    - target: {fileID: 828648491150709437, guid: 4696edac668eeb54aa22cfe47b655f32,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1363247127282229523, guid: 4696edac668eeb54aa22cfe47b655f32,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1212,10 +1217,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1540985923357275982, guid: 4696edac668eeb54aa22cfe47b655f32,
         type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540985923357275982, guid: 4696edac668eeb54aa22cfe47b655f32,
+        type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 22100000, guid: 4688a51e06daca341bb8e5f941fd7772,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 1622355644792230528, guid: 4696edac668eeb54aa22cfe47b655f32,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -1401,6 +1410,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PlayerCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 5262520664344185964, guid: 4696edac668eeb54aa22cfe47b655f32,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 64808983}
     - target: {fileID: 5262520664344185964, guid: 4696edac668eeb54aa22cfe47b655f32,
         type: 3}
       propertyPath: waypoint
