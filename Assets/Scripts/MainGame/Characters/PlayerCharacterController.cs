@@ -10,6 +10,7 @@ using UnityEngine.Serialization;
 
 public class PlayerCharacterController : MonoBehaviour
 {
+    private static readonly int SpeedAnimatorHash = Animator.StringToHash("Speed");
     public event UnityAction<int> onTakeDamageEventAction;
     [SerializeField] private UnityEvent<int> onTakeDamageEvent;
 
@@ -93,8 +94,6 @@ public class PlayerCharacterController : MonoBehaviour
 
     private void Update()
     {
-        // if(animator)
-        //     animator.SetFloat("Speed", (int) navMeshAgent.velocity.magnitude);
         if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
         {
             currentWaypointIndex++;
@@ -102,5 +101,7 @@ public class PlayerCharacterController : MonoBehaviour
                 currentWaypointIndex = 0;
             SetDestination(pathWaypoints[currentWaypointIndex]);
         }
+        if(animator)
+            animator.SetFloat(SpeedAnimatorHash, navMeshAgent.velocity.magnitude);
     }
 }

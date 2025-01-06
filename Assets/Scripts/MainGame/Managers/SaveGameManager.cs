@@ -27,19 +27,19 @@ public class SaveGameManager : MonoBehaviour
         serializedSaveGame.playerRotationY = gameManager.playerCharacterController.transform.eulerAngles.y;
         serializedSaveGame.playerRotationZ = gameManager.playerCharacterController.transform.eulerAngles.z;
         
-        serializedSaveGame.playerHP = gameManager.playerCharacterController.Hp;
+        serializedSaveGame.playerHPNew = gameManager.playerCharacterController.Hp;
         serializedSaveGame.currentWaypointIndex = gameManager.playerCharacterController.CurrentWaypointIndex;
         
-            SaveToJson();
-      //   SaveToBinary();
+          //  SaveToJson();
+         SaveToBinary();
     }
 
     [ContextMenu("Load!")]
     public void LoadGame()
     {
-        LoadFromJson();
+       // LoadFromJson();
 
-     //    LoadFromBinary();
+         LoadFromBinary();
         
          // gameManager.playerCharacterController.transform.position = serializedSaveGame.playerPosition;
          // gameManager.playerCharacterController.transform.eulerAngles = serializedSaveGame.playerRotation;
@@ -47,7 +47,7 @@ public class SaveGameManager : MonoBehaviour
              serializedSaveGame.playerPositionY, serializedSaveGame.playerPositionZ);
          gameManager.playerCharacterController.transform.eulerAngles = new Vector3(serializedSaveGame.playerRotationX,
              serializedSaveGame.playerRotationY, serializedSaveGame.playerRotationZ);
-         gameManager.playerCharacterController.Hp = serializedSaveGame.playerHP;
+         gameManager.playerCharacterController.Hp = serializedSaveGame.playerHPNew;
         
          gameManager.playerCharacterController.CurrentWaypointIndex = serializedSaveGame.currentWaypointIndex;
          //
@@ -70,7 +70,8 @@ public class SaveGameManager : MonoBehaviour
 
     private void SaveToBinary()
     {
-        FileStream fileStream = new FileStream(Application.persistentDataPath + SAVE_FILE_NAME, FileMode.Create);
+        FileStream fileStream = new FileStream(Application.persistentDataPath
+                                               + SAVE_FILE_NAME, FileMode.Create);
         BinaryFormatter converter = new BinaryFormatter();
         converter.Serialize(fileStream, serializedSaveGame);
         fileStream.Close();
