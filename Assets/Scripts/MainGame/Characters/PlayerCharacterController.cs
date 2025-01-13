@@ -41,6 +41,7 @@ public class PlayerCharacterController : MonoBehaviour
 
 
     private int hp = 100;
+    private int startingHp;
 
     public void ToggleMoving(bool shouldMove)
     {
@@ -62,12 +63,15 @@ public class PlayerCharacterController : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         hp -= damageAmount;
+        float hpPercentLeft = (float) hp / startingHp;
+        animator.SetLayerWeight(1, (1 - hpPercentLeft));
         onTakeDamageEvent.Invoke(hp);
         onTakeDamageEventAction.Invoke(hp);
     }
 
     private void Start()
     {
+        startingHp = hp;
         SetMudAreaCost();
         ToggleMoving(true);
         SetDestination(pathWaypoints[0]);
@@ -103,5 +107,13 @@ public class PlayerCharacterController : MonoBehaviour
         }
         if(animator)
             animator.SetFloat(SpeedAnimatorHash, navMeshAgent.velocity.magnitude);
+        
+       
+        
+    }
+
+    private void PlayFootStepSound()
+    {
+        Debug.Log("Play footstep sound");
     }
 }
