@@ -105,11 +105,23 @@ public class PlayerCharacterController : MonoBehaviour
                 currentWaypointIndex = 0;
             SetDestination(pathWaypoints[currentWaypointIndex]);
         }
-        if(animator)
+
+        if (animator)
             animator.SetFloat(SpeedAnimatorHash, navMeshAgent.velocity.magnitude);
-        
-       
-        
+
+
+        for (int i = 0; i < 100; i++)
+        {
+            Transform[] foundObjects =
+                GameObject.FindObjectsByType<Transform>(FindObjectsInactive.Include, FindObjectsSortMode.InstanceID);
+            for (int j = 0; j < foundObjects.Length; j++)
+            {
+                foundObjects[j].GetComponent<PlayerCharacterController>();
+            }
+        }
+    
+     
+
     }
 
     private void PlayFootStepSound()
