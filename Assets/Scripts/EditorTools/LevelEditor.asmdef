@@ -1,8 +1,8 @@
 {
-    "name": "EditorToolsAssembly",
+    "name": "LevelEditor",
     "rootNamespace": "",
     "references": [
-        "GUID:758203b1e2d0edd4687c01db8fafa963"
+        "GUID:05a199bd295480849b5dc19966ef2b02"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
