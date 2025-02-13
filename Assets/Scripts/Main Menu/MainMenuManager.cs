@@ -46,7 +46,6 @@ public class MainMenuManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         anyButtonHintText.gameObject.SetActive(true);
         isLoadingWaitingForInput = true;
-        SceneManager.un
     }
 
     private bool IsLoadingComplete()
