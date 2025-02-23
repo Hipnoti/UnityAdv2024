@@ -9,18 +9,23 @@ using Random = UnityEngine.Random;
 
 public class JobManager : MonoBehaviour
 {
-    private const int OBJECT_COUNT = 2000000000;
-    
+    private const int OBJECT_COUNT = 400000000;
+
+    private JobHandle firstHandle;
     private JobHandle handle;
-    private NativeArray<float> result;
+    private NativeArray<float> itemsResultArray;
+    public NativeArray<float> npcResultArray;
+    public NativeArray<float> strucutresResultArray;
+    public NativeArray<float> resourcesResultArray;
+    public NativeArray<float> terrainResultArray;
     private Unity.Mathematics.Random random = new ((uint)DateTime.Now.Ticks);
     
     private IEnumerator Start()
     {
         yield return null;
         
-          StartJobs();
-          FinishJobs();
+           StartJobs();
+           FinishJobs();
         
         // Stopwatch stopwatch = Stopwatch.StartNew();
         //  NomralMapCreation();
@@ -31,21 +36,36 @@ public class JobManager : MonoBehaviour
     [ContextMenu("Start Jobs")]
     private void StartJobs()
     {
-        result = new NativeArray<float>(OBJECT_COUNT, Allocator.TempJob);
-        MapCreationJob job = new MapCreationJob { array = result, rand = random};
-        handle = job.Schedule(OBJECT_COUNT, 10000);
-    }
+        itemsResultArray = new NativeArray<float>(OBJECT_COUNT, Allocator.TempJob);
+        resourcesResultArray = new NativeArray<float>(OBJECT_COUNT, Allocator.TempJob);
+        terrainResultArray = new NativeArray<float>(OBJECT_COUNT, Allocator.TempJob);
+        npcResultArray = new NativeArray<float>(OBJECT_COUNT, Allocator.TempJob);
+        strucutresResultArray = new NativeArray<float>(OBJECT_COUNT, Allocator.TempJob);
+        
+        MapCreationJob mapCreationJob = new MapCreationJob
+        {
+            itemsResultArray = itemsResultArray,
+            npcResultArray = npcResultArray,
+            strucutresResultArray = strucutresResultArray, 
+            resourcesResultArray = resourcesResultArray,
+            terrainResultArray = terrainResultArray
+        };
 
+      //  MapCreationJob firstJob = new MapCreationJob();
+     //   firstHandle = firstJob.Schedule(OBJECT_COUNT, 100000);
+        handle = mapCreationJob.Schedule(OBJECT_COUNT, 100000);
+    }
+    //
     [ContextMenu("Finish Jobs")]
     private void FinishJobs()
     { 
         Stopwatch stopwatch = Stopwatch.StartNew();
-
+    
         handle.Complete();
-       
-        result.Dispose();
+        
+        itemsResultArray.Dispose();
         stopwatch.Stop();
-        Debug.Log($"Job Handle Completion Time: {stopwatch.ElapsedMilliseconds/1000f} ms");
+        Debug.Log($"Job Handle Completion Time: {stopwatch.ElapsedMilliseconds/1000f}");
         
     }
     
