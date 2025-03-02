@@ -25,9 +25,10 @@ public class LevelManager : MonoBehaviour
 
     private void AsyncOperationOnCompleted(AsyncOperationHandle<GameObject> obj)
     {
-       Debug.Log("Instntiate");
+       Debug.Log("Instantiate");
     }
 
+    [ContextMenu("Load Sector")]
     public void LoadSector()
     {
         AsyncOperationHandle<GameObject> asyncOperationHandle = Addressables.LoadAssetAsync<GameObject>(sectorAsset);
@@ -36,7 +37,7 @@ public class LevelManager : MonoBehaviour
 
     private void LoadAsyncComplete(AsyncOperationHandle<GameObject> asyncOperationHandle)
     {
-       Debug.Log("Loading complete!");
-       loadedSector = asyncOperationHandle.Result;
+        Debug.Log("Loading complete!");
+        loadedSector = asyncOperationHandle.Result;
     }
 }
