@@ -1702,6 +1702,12 @@ PrefabInstance:
       objectReference: {fileID: 64808983}
     - target: {fileID: 2946589972397768415, guid: a6883c51f22a91441945fbd6682f0a5f,
         type: 3}
+      propertyPath: inputActionAsset
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: b64ccd1805f8e55429a263f2439f64a3,
+        type: 3}
+    - target: {fileID: 2946589972397768415, guid: a6883c51f22a91441945fbd6682f0a5f,
+        type: 3}
       propertyPath: pathWaypoints.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -23013,7 +23019,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136455730}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b94e2a29a5f64c91abe497e81206c4f0, type: 3}
   m_Name: 

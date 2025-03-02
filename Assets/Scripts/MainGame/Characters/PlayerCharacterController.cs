@@ -12,8 +12,12 @@ public class PlayerCharacterController : MonoBehaviour
 {
     private static readonly int SpeedAnimatorHash = Animator.StringToHash("Speed");
     public event UnityAction<int> onTakeDamageEventAction;
+    
     [SerializeField] private UnityEvent<int> onTakeDamageEvent;
-
+    
+    [Header("Input")]
+    [SerializeField] private InputActionAsset inputActionAsset;
+    
     [Header("Navigation")] 
     [SerializeField] private NavMeshAgent navMeshAgent;
 
@@ -22,6 +26,10 @@ public class PlayerCharacterController : MonoBehaviour
     
     [SerializeField] Animator animator;
 
+    private InputActionMap inputActionMap;
+
+    private InputSystem_Actions actions;
+    
     public int Hp
     {
         get => hp;
@@ -38,7 +46,6 @@ public class PlayerCharacterController : MonoBehaviour
     private int currentWaypointIndex = 0;
 
     private bool hasBloodyBoots = true;
-
 
     private int hp = 100;
     private int startingHp;
@@ -71,10 +78,12 @@ public class PlayerCharacterController : MonoBehaviour
 
     private void Start()
     {
-        startingHp = hp;
+        BasePartialClass partialClass = new BasePartialClass();
+ 
         SetMudAreaCost();
         ToggleMoving(true);
         SetDestination(pathWaypoints[0]);
+        InitializeInputActions();
         // if (waypoint)
         // {
         //     SetDestination(waypoint);
@@ -108,10 +117,50 @@ public class PlayerCharacterController : MonoBehaviour
 
         if (animator)
             animator.SetFloat(SpeedAnimatorHash, navMeshAgent.velocity.magnitude);
+
     }
 
     private void PlayFootStepSound()
     {
         Debug.Log("Play footstep sound");
     }
+
+    #region Input
+
+    private void OnEnable()
+    {
+        actions = new InputSystem_Actions();
+        actions.Player.Enable();
+    }
+
+    private void InitializeInputActions()
+    {
+        actions.Player.MoveTo.performed += MoveToAction;
+    }
+    
+
+    private void OnDisable()
+    {
+        actions.Player.Disable();
+    }
+
+    #endregion
+
+    // public void OnAttack(InputAction.CallbackContext context)
+    // {
+    //     Debug.Log(context.phase);
+    //     if(context.performed)
+    //         Debug.Log("Should do attack");
+    // }
+    //
+    public void MoveToAction(InputAction.CallbackContext context)
+    {
+       Debug.Log("Move to action");
+    }
+    //
+    // public void MoveActionVector(InputAction.CallbackContext context)
+    // {
+    //     Debug.Log("Move action vector " + context.ReadValue<Vector2>());
+    // }
+
 }
