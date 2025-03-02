@@ -15,11 +15,6 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_GUID: 58b4f14473a550143b5b141f03fd3cc5
   m_SerializeEntries:
-  - m_GUID: 55c1a16728b81a747b35a65a43f58389
-    m_Address: Assets/Prefabs/Rooms/Sector.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 917d8b68eb2c4c941a7303611e8c74c4
     m_Address: Assets/Prefabs/Hazards/Fire.prefab
     m_ReadOnly: 0
