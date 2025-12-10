@@ -50,5 +50,10 @@ public class PlayerCharacterController : MonoBehaviour
     //         SetDestination(pathWaypoints[currentWaypointIndex]);
     //     }
     // }
+
+    private void SetAreaCost()
+    {
+        navMeshAgent.SetAreaCost( NavMesh.GetAreaFromName("Mud"), 1);
+    }
   
 }
