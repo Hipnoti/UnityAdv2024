@@ -10,157 +10,45 @@ using UnityEngine.Serialization;
 
 public class PlayerCharacterController : MonoBehaviour
 {
-    private static readonly int SpeedAnimatorHash = Animator.StringToHash("Speed");
-    public event UnityAction<int> onTakeDamageEventAction;
-    
-    [SerializeField] private UnityEvent<int> onTakeDamageEvent;
-    
-    [Header("Input")]
-    [SerializeField] private InputActionAsset inputActionAsset;
-    
     [Header("Navigation")] 
     [SerializeField] private NavMeshAgent navMeshAgent;
-
-    [SerializeField] private Transform waypoint;
+    [SerializeField] private Transform waypoint; 
     [SerializeField] private Transform[] pathWaypoints;
+    [SerializeField] private bool moveOnStart;
     
-    [SerializeField] Animator animator;
-
-    private InputActionMap inputActionMap;
-
-    private InputSystem_Actions actions;
-    
-    public int Hp
-    {
-        get => hp;
-        set => hp = value;
-    }
-
-    public int CurrentWaypointIndex
-    {
-        get => currentWaypointIndex;
-        set => currentWaypointIndex = value;
-    }
-
-    private bool isMoving = true;
+    private bool isMoving;
     private int currentWaypointIndex = 0;
-
-    private bool hasBloodyBoots = true;
-
-    private int hp = 100;
-    private int startingHp;
-
+    
     public void ToggleMoving(bool shouldMove)
     {
         isMoving = shouldMove;
-        if (navMeshAgent) navMeshAgent.enabled = shouldMove;
+        if(navMeshAgent) navMeshAgent.enabled = isMoving;
     }
 
     public void SetDestination(Transform targetTransformWaypoint)
     {
-        if (navMeshAgent)
+        if(navMeshAgent)
             navMeshAgent.SetDestination(targetTransformWaypoint.position);
     }
-
-    public void SetDestination(int waypointIndex)
-    {
-        SetDestination(pathWaypoints[waypointIndex]);
-    }
-
-    public void TakeDamage(int damageAmount)
-    {
-        hp -= damageAmount;
-        float hpPercentLeft = (float) hp / startingHp;
-        animator.SetLayerWeight(1, (1 - hpPercentLeft));
-        onTakeDamageEvent.Invoke(hp);
-        onTakeDamageEventAction.Invoke(hp);
-    }
-
+     
     private void Start()
     {
-        BasePartialClass partialClass = new BasePartialClass();
- 
-        SetMudAreaCost();
-        ToggleMoving(true);
-        SetDestination(pathWaypoints[0]);
-        InitializeInputActions();
-        // if (waypoint)
-        // {
-        //     SetDestination(waypoint);
-        // }
-    }
-
-    private void SetMudAreaCost()
-    {
-        if (hasBloodyBoots)
+        if (moveOnStart && waypoint)
         {
-            navMeshAgent.SetAreaCost(3, 1);
+            SetDestination(waypoint);
+            ToggleMoving(true);
         }
     }
 
-    [ContextMenu("Take Damage Test")]
-    private void TakeDamageTesting()
-    {
-        TakeDamage(10);
-    }
-
-
-    private void Update()
-    {
-        if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
-        {
-            currentWaypointIndex++;
-            if (currentWaypointIndex >= pathWaypoints.Length)
-                currentWaypointIndex = 0;
-            SetDestination(pathWaypoints[currentWaypointIndex]);
-        }
-
-        if (animator)
-            animator.SetFloat(SpeedAnimatorHash, navMeshAgent.velocity.magnitude);
-
-    }
-
-    private void PlayFootStepSound()
-    {
-        Debug.Log("Play footstep sound");
-    }
-
-    #region Input
-
-    private void OnEnable()
-    {
-        actions = new InputSystem_Actions();
-        actions.Player.Enable();
-    }
-
-    private void InitializeInputActions()
-    {
-        actions.Player.MoveTo.performed += MoveToAction;
-    }
-    
-
-    private void OnDisable()
-    {
-        actions.Player.Disable();
-    }
-
-    #endregion
-
-    // public void OnAttack(InputAction.CallbackContext context)
+    // private void Update()
     // {
-    //     Debug.Log(context.phase);
-    //     if(context.performed)
-    //         Debug.Log("Should do attack");
+    //     if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
+    //     {
+    //         currentWaypointIndex++;
+    //         if (currentWaypointIndex >= pathWaypoints.Length)
+    //             currentWaypointIndex = 0;
+    //         SetDestination(pathWaypoints[currentWaypointIndex]);
+    //     }
     // }
-    //
-    public void MoveToAction(InputAction.CallbackContext context)
-    {
-       Debug.Log("Move to action");
-    }
-    //
-    // public void MoveActionVector(InputAction.CallbackContext context)
-    // {
-    //     Debug.Log("Move action vector " + context.ReadValue<Vector2>());
-    // }
-
+  
 }
