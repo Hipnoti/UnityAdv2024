@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Mono.Cecil.Cil;
 using Unity.AI.Navigation;
 using UnityEngine;
 using UnityEngine.AI;
@@ -40,16 +41,19 @@ public class PlayerCharacterController : MonoBehaviour
         }
     }
 
-    // private void Update()
-    // {
-    //     if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
-    //     {
-    //         currentWaypointIndex++;
-    //         if (currentWaypointIndex >= pathWaypoints.Length)
-    //             currentWaypointIndex = 0;
-    //         SetDestination(pathWaypoints[currentWaypointIndex]);
-    //     }
-    // }
+    private void Update()
+    {
+        if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
+        {
+            NavMeshObstacle a;
+            isMoving = false;
+            Debug.Log("Reached Destination");
+            // currentWaypointIndex++;
+            // if (currentWaypointIndex >= pathWaypoints.Length)
+            //     currentWaypointIndex = 0;
+            // SetDestination(pathWaypoints[currentWaypointIndex]);
+        }
+    }
 
     private void SetAreaCost()
     {
