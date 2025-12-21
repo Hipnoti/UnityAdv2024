@@ -16,8 +16,10 @@ public class PlayerCharacterController : MonoBehaviour
     [SerializeField] private Transform waypoint; 
     [SerializeField] private Transform[] pathWaypoints;
     [SerializeField] private bool moveOnStart;
+    [SerializeField] private bool hasFurBalls;
     
     private bool isMoving;
+    
     private int currentWaypointIndex = 0;
     
     public void ToggleMoving(bool shouldMove)
@@ -39,13 +41,15 @@ public class PlayerCharacterController : MonoBehaviour
             SetDestination(waypoint);
             ToggleMoving(true);
         }
+
+        if (hasFurBalls)
+            SetAreaCost();
     }
 
     private void Update()
     {
         if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
         {
-            NavMeshObstacle a;
             isMoving = false;
             Debug.Log("Reached Destination");
             // currentWaypointIndex++;
