@@ -19531,7 +19531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06fb44a2a2621014dbe31688fc768920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCharacterController: {fileID: 0}
+  playerCharacterController: {fileID: 1833833223}
   fireHazardScriptableObjects: []
   fireHazards:
   - {fileID: 878030380}
@@ -19612,22 +19612,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 794181239830873258, guid: 917d8b68eb2c4c941a7303611e8c74c4,
         type: 3}
-      propertyPath: onCharacterEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 794181239830873258, guid: 917d8b68eb2c4c941a7303611e8c74c4,
-        type: 3}
       propertyPath: onPlayerEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 794181239830873258, guid: 917d8b68eb2c4c941a7303611e8c74c4,
         type: 3}
       propertyPath: onPlayerEntered.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 794181239830873258, guid: 917d8b68eb2c4c941a7303611e8c74c4,
-        type: 3}
-      propertyPath: onCharacterEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4694815534820012663, guid: 917d8b68eb2c4c941a7303611e8c74c4,

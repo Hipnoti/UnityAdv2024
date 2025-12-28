@@ -4,15 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 public class FireHazard : MonoBehaviour
 {
-    public event UnityAction<FireEnteredEventArgs> onCharacterEnteredAction;
+    //public event UnityAction<FireEnteredEventArgs> onCharacterEnteredAction;
     
-    [HideInInspector] public FireHazardScriptableObject fireHazardData;
-
-    [SerializeField]
-    private UnityEvent<FireEnteredEventArgs> onCharacterEntered = new UnityEvent<FireEnteredEventArgs>();
+    // public FireHazardScriptableObject fireHazardData;
+    //public int damageMin, damageMax;
+    
+  //  [SerializeField] public UnityEvent onCharacterEntered;
+   // [SerializeField] private UnityEvent<int> onCharacterEntered;
+     public Action<int> onCharacterEntered;
+    //With special parameters
+    // [SerializeField] private UnityEvent<FireEnteredEventArgs> onCharacterEntered = new UnityEvent<FireEnteredEventArgs>();
 
     // public void SetScriptableData(FireHazardScriptableObject fireHazardScriptableObject)
     // {
@@ -28,14 +33,31 @@ public class FireHazard : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PlayerCharacter"))
         {
-            Debug.Log("Player entered this hazard");
-            FireEnteredEventArgs fireEnteredEventArgs = new FireEnteredEventArgs
-            {
-                damageDealt = fireHazardData.GetRandomFireDamage(),
-                targetCharacterController = other.GetComponent<PlayerCharacterController>()
-            };
-            onCharacterEntered?.Invoke(fireEnteredEventArgs);
-            onCharacterEnteredAction.Invoke(fireEnteredEventArgs);
+            //Bad, coupled way.
+            //  int damageDealt = Random.Range(damageMin, damageMax + 1);
+            // if(GameManager.Instance)
+            //     GameManager.Instance.playerCharacterController.TakeDamage(damageDealt);
+            // if(UIManager.Instance)
+            //     UIManager.Instance.RefreshHPText( GameManager.Instance.playerCharacterController.Hp);
+            
+            //Better, event based.
+            // Debug.Log("Player entered this hazard");
+            // int damageDealt = fireHazardData.GetRandomFireDamage(); 
+            // onCharacterEntered.Invoke(damageDealt);
+            //onCharacterEntered.Invoke();
+            //  onCharacterEntered?.Invoke();
+
+
+
+
+
+            // FireEnteredEventArgs fireEnteredEventArgs = new FireEnteredEventArgs
+            // {
+            //     damageDealt = damageDealt,
+            //     targetCharacterController = other.GetComponent<PlayerCharacterController>()
+            // };
+
+            //  onCharacterEnteredAction.Invoke(fireEnteredEventArgs);
         }
     }
 }

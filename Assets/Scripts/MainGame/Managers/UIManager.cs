@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+    public static UIManager Instance { private set; get; }
+    
     public TextMeshProUGUI hpText;
 
     [SerializeField] private PlayerCharacterController bobby;
@@ -18,6 +20,7 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
         bobby.onTakeDamageEventAction += RefreshHPText;
     }
 

@@ -73,17 +73,17 @@ public class PlayerCharacterController : MonoBehaviour
     }
 
 
-    private void Update()
-    {
-        if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
-        {
-            currentWaypointIndex++;
-            if (currentWaypointIndex >= pathWaypoints.Length)
-                currentWaypointIndex = 0;
-            SetDestination(pathWaypoints[currentWaypointIndex]);
-        }
-
-    }
+    // private void Update()
+    // {
+    //     if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
+    //     {
+    //         currentWaypointIndex++;
+    //         if (currentWaypointIndex >= pathWaypoints.Length)
+    //             currentWaypointIndex = 0;
+    //         SetDestination(pathWaypoints[currentWaypointIndex]);
+    //     }
+    //
+    // }
     
 
 }
