@@ -15,20 +15,12 @@ public class PlayerCharacterController : MonoBehaviour
     
     [SerializeField] private UnityEvent<int> onTakeDamageEvent;
     
-    [Header("Input")]
-    [SerializeField] private InputActionAsset inputActionAsset;
-    
     [Header("Navigation")] 
     [SerializeField] private NavMeshAgent navMeshAgent;
 
     [SerializeField] private Transform waypoint;
     [SerializeField] private Transform[] pathWaypoints;
     
-    [SerializeField] Animator animator;
-
-    private InputActionMap inputActionMap;
-
-    private InputSystem_Actions actions;
     
     public int Hp
     {
@@ -70,38 +62,14 @@ public class PlayerCharacterController : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         hp -= damageAmount;
-        float hpPercentLeft = (float) hp / startingHp;
-        animator.SetLayerWeight(1, (1 - hpPercentLeft));
         onTakeDamageEvent.Invoke(hp);
         onTakeDamageEventAction.Invoke(hp);
     }
 
     private void Start()
     {
-        BasePartialClass partialClass = new BasePartialClass();
- 
-        SetMudAreaCost();
         ToggleMoving(true);
-        SetDestination(pathWaypoints[0]);
-        InitializeInputActions();
-        // if (waypoint)
-        // {
-        //     SetDestination(waypoint);
-        // }
-    }
-
-    private void SetMudAreaCost()
-    {
-        if (hasBloodyBoots)
-        {
-            navMeshAgent.SetAreaCost(3, 1);
-        }
-    }
-
-    [ContextMenu("Take Damage Test")]
-    private void TakeDamageTesting()
-    {
-        TakeDamage(10);
+        SetDestination(waypoint);
     }
 
 
@@ -115,52 +83,7 @@ public class PlayerCharacterController : MonoBehaviour
             SetDestination(pathWaypoints[currentWaypointIndex]);
         }
 
-        if (animator)
-            animator.SetFloat(SpeedAnimatorHash, navMeshAgent.velocity.magnitude);
-
-    }
-
-    private void PlayFootStepSound()
-    {
-        Debug.Log("Play footstep sound");
-    }
-
-    #region Input
-
-    private void OnEnable()
-    {
-        actions = new InputSystem_Actions();
-        actions.Player.Enable();
-    }
-
-    private void InitializeInputActions()
-    {
-        actions.Player.MoveTo.performed += MoveToAction;
     }
     
-
-    private void OnDisable()
-    {
-        actions.Player.Disable();
-    }
-
-    #endregion
-
-    // public void OnAttack(InputAction.CallbackContext context)
-    // {
-    //     Debug.Log(context.phase);
-    //     if(context.performed)
-    //         Debug.Log("Should do attack");
-    // }
-    //
-    public void MoveToAction(InputAction.CallbackContext context)
-    {
-       Debug.Log("Move to action");
-    }
-    //
-    // public void MoveActionVector(InputAction.CallbackContext context)
-    // {
-    //     Debug.Log("Move action vector " + context.ReadValue<Vector2>());
-    // }
 
 }
