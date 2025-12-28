@@ -11,6 +11,8 @@ using UnityEngine.Serialization;
 
 public class PlayerCharacterController : MonoBehaviour
 {
+    private const string MUD_LAYER_NAME = "Mud";
+    
     [Header("Navigation")] 
     [SerializeField] private NavMeshAgent navMeshAgent;
     [SerializeField] private Transform waypoint; 
@@ -19,7 +21,6 @@ public class PlayerCharacterController : MonoBehaviour
     [SerializeField] private bool hasFurBalls;
     
     private bool isMoving;
-    
     private int currentWaypointIndex = 0;
     
     public void ToggleMoving(bool shouldMove)
@@ -50,18 +51,16 @@ public class PlayerCharacterController : MonoBehaviour
     {
         if (isMoving && !navMeshAgent.isStopped && navMeshAgent.remainingDistance <= 0.1f)
         {
-            isMoving = false;
-            Debug.Log("Reached Destination");
-            // currentWaypointIndex++;
-            // if (currentWaypointIndex >= pathWaypoints.Length)
-            //     currentWaypointIndex = 0;
-            // SetDestination(pathWaypoints[currentWaypointIndex]);
+            currentWaypointIndex++;
+            if (currentWaypointIndex >= pathWaypoints.Length)
+                currentWaypointIndex = 0;
+            SetDestination(pathWaypoints[currentWaypointIndex]);
         }
     }
 
     private void SetAreaCost()
     {
-        navMeshAgent.SetAreaCost( NavMesh.GetAreaFromName("Mud"), 1);
+        navMeshAgent.SetAreaCost(NavMesh.GetAreaFromName(MUD_LAYER_NAME), 1);
     }
   
 }

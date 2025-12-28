@@ -2426,7 +2426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &288364051
 Transform:
   m_ObjectHideFlags: 0
@@ -2698,7 +2698,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &304524065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10556,7 +10556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1081090353
 Transform:
   m_ObjectHideFlags: 0
@@ -15479,7 +15479,7 @@ PrefabInstance:
     - target: {fileID: 1526554761915109350, guid: 90a47b37da0516d4e9113779469b6403,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2554720417436106229, guid: 90a47b37da0516d4e9113779469b6403,
         type: 3}
@@ -19704,13 +19704,13 @@ PrefabInstance:
     - target: {fileID: 5244814433848129422, guid: 4696edac668eeb54aa22cfe47b655f32,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5262520664344185964, guid: 4696edac668eeb54aa22cfe47b655f32,
         type: 3}
       propertyPath: waypoint
       value: 
-      objectReference: {fileID: 757132571}
+      objectReference: {fileID: 1952807662}
     - target: {fileID: 5262520664344185964, guid: 4696edac668eeb54aa22cfe47b655f32,
         type: 3}
       propertyPath: hasFurBalls
@@ -19767,7 +19767,7 @@ PrefabInstance:
     - target: {fileID: 1155836388177664897, guid: 813b5b18ceaec4a4081a76839d7f747e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.3
+      value: 12.69
       objectReference: {fileID: 0}
     - target: {fileID: 1155836388177664897, guid: 813b5b18ceaec4a4081a76839d7f747e,
         type: 3}
@@ -19777,7 +19777,7 @@ PrefabInstance:
     - target: {fileID: 1155836388177664897, guid: 813b5b18ceaec4a4081a76839d7f747e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.7
+      value: 4.08
       objectReference: {fileID: 0}
     - target: {fileID: 1155836388177664897, guid: 813b5b18ceaec4a4081a76839d7f747e,
         type: 3}
