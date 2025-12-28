@@ -11,7 +11,7 @@ public class FireHazard : MonoBehaviour
     //public event UnityAction<FireEnteredEventArgs> onCharacterEnteredAction;
     
     // public FireHazardScriptableObject fireHazardData;
-    //public int damageMin, damageMax;
+    public int damageMin, damageMax;
     
   //  [SerializeField] public UnityEvent onCharacterEntered;
    // [SerializeField] private UnityEvent<int> onCharacterEntered;

@@ -24002,7 +24002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageMin: 10
-  damageMax: 30
+  damageMax: 20
 --- !u!1 &5519916052489505964
 GameObject:
   m_ObjectHideFlags: 0
