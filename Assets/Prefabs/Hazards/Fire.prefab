@@ -24001,8 +24001,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247057fdf6fa1a5418c7f3153e703e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageMin: 10
-  damageMax: 20
+  fireHazardData: {fileID: 11400000, guid: 2e8d4bbf9c0dc524b8b2fe26c1028f1c, type: 2}
+  onCharacterEntered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6435382280330440619}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5519916052489505964
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,14 +8,16 @@ using Random = UnityEngine.Random;
 
 public class FireHazard : MonoBehaviour
 {
+    private const string PlayerCharacterTag = "PlayerCharacter";
     //public event UnityAction<FireEnteredEventArgs> onCharacterEnteredAction;
     
-    // public FireHazardScriptableObject fireHazardData;
-    public int damageMin, damageMax;
-    
-  //  [SerializeField] public UnityEvent onCharacterEntered;
-   // [SerializeField] private UnityEvent<int> onCharacterEntered;
-     public Action<int> onCharacterEntered;
+     public FireHazardScriptableObject fireHazardData;
+    //public int damageMin, damageMax;
+
+    public event UnityAction onCharacterEnteredAction;
+    [SerializeField] private UnityEvent onCharacterEntered;
+   //public UnityEvent<FireEnteredEventArgs> onCharacterEntered;
+   //  public event Action<int> onCharacterEntered;
     //With special parameters
     // [SerializeField] private UnityEvent<FireEnteredEventArgs> onCharacterEntered = new UnityEvent<FireEnteredEventArgs>();
 
@@ -23,16 +25,19 @@ public class FireHazard : MonoBehaviour
     // {
     //     fireHazardData = fireHazardScriptableObject;
     // }
-    // private void Start()
-    // { 
-    //     if(onCharacterEnteredAction != null)
-    //        onCharacterEntered.AddListener(onCharacterEnteredAction);
-    // }
+    private void Start()
+    { 
+        if(onCharacterEnteredAction != null)
+           onCharacterEntered.AddListener(onCharacterEnteredAction);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("PlayerCharacter"))
+        if (other.gameObject.CompareTag(PlayerCharacterTag))
         {
+        //   int damageDealt = Random.Range(damageMin, damageMax + 1);
+          //  onCharacterEntered.Invoke(damageDealt);
+            //Debug.Log("Player entered this hazard");
             //Bad, coupled way.
             //  int damageDealt = Random.Range(damageMin, damageMax + 1);
             // if(GameManager.Instance)
@@ -51,13 +56,16 @@ public class FireHazard : MonoBehaviour
 
 
 
-            // FireEnteredEventArgs fireEnteredEventArgs = new FireEnteredEventArgs
-            // {
-            //     damageDealt = damageDealt,
-            //     targetCharacterController = other.GetComponent<PlayerCharacterController>()
-            // };
+          //  onCharacterEntered?.Invoke(10);
+             int damageDealt = fireHazardData.GetRandomFireDamage(); 
+            onCharacterEnteredAction?.Invoke();
+            FireEnteredEventArgs fireEnteredEventArgs = new FireEnteredEventArgs
+            {
+                damageDealt = damageDealt,
+                targetCharacterController = other.GetComponent<PlayerCharacterController>()
+            };
 
-            //  onCharacterEnteredAction.Invoke(fireEnteredEventArgs);
+            //onCharacterEntered.Invoke(fireEnteredEventArgs);
         }
     }
 }

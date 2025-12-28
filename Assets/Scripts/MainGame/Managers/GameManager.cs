@@ -23,14 +23,15 @@ public class GameManager : MonoBehaviour
         //  //   fireHazard.onCharacterEntered += HandleCharacterEnteredFire;
         // }
         //Unity Actions
-        // foreach (FireHazard fireHazard in fireHazards)
-        // {
-        //     // fireHazard.fireHazardData = 
-        //     //     fireHazardScriptableObjects[Random.Range(0, fireHazardScriptableObjects.Length)];
-        //     fireHazard.onCharacterEntered.AddListener(HandleCharacterEnteredFire);
-        // }
+        foreach (FireHazard fireHazard in fireHazards)
+        {
+            // fireHazard.fireHazardData = 
+            //     fireHazardScriptableObjects[Random.Range(0, fireHazardScriptableObjects.Length)];
+           // fireHazard.onCharacterEntered.AddListener(HandleCharacterEnteredFire);
+        }
       
     }
+    
 
     public void HandleCharacterEnteredFire()
     {

@@ -8,6 +8,7 @@ public class FireHazardScriptableObject : ScriptableObject
     [SerializeField] private int minimumDamage;
     [SerializeField] private int maximumDamage;
     
+    
     public int GetRandomFireDamage()
     {
         int randomDamage = Random.Range(minimumDamage, maximumDamage + 1);
