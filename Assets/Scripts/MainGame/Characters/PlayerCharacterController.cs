@@ -25,7 +25,8 @@ public class PlayerCharacterController : MonoBehaviour
     [SerializeField] private Transform[] pathWaypoints;
     
     [SerializeField] Animator animator;
-
+    [SerializeField] private ParticleSystem fallEffect;
+    
     private InputActionMap inputActionMap;
 
     private InputSystem_Actions actions;
@@ -50,6 +51,11 @@ public class PlayerCharacterController : MonoBehaviour
     private int hp = 100;
     private int startingHp;
 
+    public void PlaySlipEffect()
+    {
+        fallEffect.Play();
+    }
+
     public void ToggleMoving(bool shouldMove)
     {
         isMoving = shouldMove;
@@ -71,7 +77,7 @@ public class PlayerCharacterController : MonoBehaviour
     {
         hp -= damageAmount;
         float hpPercentLeft = (float) hp / startingHp;
-        animator.SetLayerWeight(1, (1 - hpPercentLeft));
+   //     animator.SetLayerWeight(1, (1 - hpPercentLeft));
         onTakeDamageEvent.Invoke(hp);
         onTakeDamageEventAction.Invoke(hp);
     }

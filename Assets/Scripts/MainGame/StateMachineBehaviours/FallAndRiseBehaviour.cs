@@ -4,7 +4,7 @@ using UnityEngine.Animations;
 public class FallAndRiseBehaviour : StateMachineBehaviour
 {
     PlayerCharacterController playerCharacterController;
-
+    
     public override void OnStateMachineEnter(Animator animator, int stateMachinePathHash)
     {
         base.OnStateMachineEnter(animator, stateMachinePathHash);
