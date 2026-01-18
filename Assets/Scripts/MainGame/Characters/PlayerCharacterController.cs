@@ -11,6 +11,8 @@ using UnityEngine.Serialization;
 public class PlayerCharacterController : MonoBehaviour
 {
     private static readonly int SpeedAnimatorHash = Animator.StringToHash("Speed");
+    
+    
     public event UnityAction<int> onTakeDamageEventAction;
     
     [SerializeField] private UnityEvent<int> onTakeDamageEvent;
