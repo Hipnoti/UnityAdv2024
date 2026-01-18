@@ -26,6 +26,8 @@ public class PlayerCharacterController : MonoBehaviour
     
     [SerializeField] Animator animator;
 
+    [SerializeField] private int startingHp;
+    
     private InputActionMap inputActionMap;
 
     private InputSystem_Actions actions;
@@ -48,8 +50,7 @@ public class PlayerCharacterController : MonoBehaviour
     private bool hasBloodyBoots = true;
 
     private int hp = 100;
-    private int startingHp;
-
+    
     public void ToggleMoving(bool shouldMove)
     {
         isMoving = shouldMove;
@@ -73,13 +74,14 @@ public class PlayerCharacterController : MonoBehaviour
         float hpPercentLeft = (float) hp / startingHp;
         animator.SetLayerWeight(1, (1 - hpPercentLeft));
         onTakeDamageEvent.Invoke(hp);
-        onTakeDamageEventAction.Invoke(hp);
+        onTakeDamageEventAction?.Invoke(hp);
     }
 
     private void Start()
     {
         BasePartialClass partialClass = new BasePartialClass();
  
+        hp = startingHp;
         SetMudAreaCost();
         ToggleMoving(true);
         SetDestination(pathWaypoints[0]);

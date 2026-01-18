@@ -122,8 +122,7 @@ AnimatorStateMachine:
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
-  m_StateMachineBehaviours:
-  - {fileID: -4710808150050193973}
+  m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 310, y: 10, z: 0}
   m_EntryPosition: {x: 560, y: -130, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
@@ -247,7 +246,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Hurt
     m_StateMachine: {fileID: -4143614350604426789}
-    m_Mask: {fileID: 31900000, guid: 8e6673cda688d544497406399750e4e8, type: 2}
+    m_Mask: {fileID: 31900000, guid: 404d551d0b144aa4cbd2c0c8b0949b93, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 1

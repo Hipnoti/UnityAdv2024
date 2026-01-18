@@ -111,6 +111,7 @@ MonoBehaviour:
   waypoint: {fileID: 0}
   pathWaypoints: []
   animator: {fileID: 1540985923357275982}
+  startingHp: 100
 --- !u!195 &828648491150709437
 NavMeshAgent:
   m_ObjectHideFlags: 0
