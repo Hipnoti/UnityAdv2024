@@ -51,7 +51,7 @@ public class PlayerCharacterController : MonoBehaviour
     private bool hasBloodyBoots = true;
 
     private int hp;
-    private int startingHp;
+    private int startingHp = 100;
 
     public void PlaySlipEffect()
     {
@@ -79,7 +79,7 @@ public class PlayerCharacterController : MonoBehaviour
     {
         hp -= damageAmount;
         float hpPercentLeft = (float) hp / startingHp;
-   //     animator.SetLayerWeight(1, (1 - hpPercentLeft));
+        animator.SetLayerWeight(1, (1 - hpPercentLeft));
         onTakeDamageEvent.Invoke(hp);
         onTakeDamageEventAction.Invoke(hp);
     }
@@ -127,7 +127,7 @@ public class PlayerCharacterController : MonoBehaviour
         if (animator)
         { 
             animator.SetFloat(SpeedAnimatorHash, navMeshAgent.velocity.magnitude);
-        //    animator.SetLayerWeight(HurtLayerIndex, (float)hp/startingHp);  
+     //       animator.SetLayerWeight(HurtLayerIndex, (1 - (float)hp/startingHp));  
         }
     }
 
