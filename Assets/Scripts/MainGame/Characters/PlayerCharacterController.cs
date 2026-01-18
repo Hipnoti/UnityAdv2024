@@ -11,7 +11,7 @@ using UnityEngine.Serialization;
 public class PlayerCharacterController : MonoBehaviour
 {
     private static readonly int SpeedAnimatorHash = Animator.StringToHash("Speed");
-    
+    private const int HurtLayerIndex = 1;
     
     public event UnityAction<int> onTakeDamageEventAction;
     
@@ -50,7 +50,7 @@ public class PlayerCharacterController : MonoBehaviour
 
     private bool hasBloodyBoots = true;
 
-    private int hp = 100;
+    private int hp;
     private int startingHp;
 
     public void PlaySlipEffect()
@@ -87,7 +87,8 @@ public class PlayerCharacterController : MonoBehaviour
     private void Start()
     {
         BasePartialClass partialClass = new BasePartialClass();
- 
+
+        hp = startingHp;
         SetMudAreaCost();
         ToggleMoving(true);
         SetDestination(pathWaypoints[0]);
@@ -124,8 +125,10 @@ public class PlayerCharacterController : MonoBehaviour
         }
 
         if (animator)
+        { 
             animator.SetFloat(SpeedAnimatorHash, navMeshAgent.velocity.magnitude);
-
+        //    animator.SetLayerWeight(HurtLayerIndex, (float)hp/startingHp);  
+        }
     }
 
     private void PlayFootStepSound()
