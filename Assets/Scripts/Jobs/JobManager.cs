@@ -23,9 +23,9 @@ public class JobManager : MonoBehaviour
     private IEnumerator Start()
     {
         yield return null;
-        
-           StartJobs();
-           FinishJobs();
+           //
+           // StartJobs();
+           // FinishJobs();
         
         // Stopwatch stopwatch = Stopwatch.StartNew();
         //  NomralMapCreation();
