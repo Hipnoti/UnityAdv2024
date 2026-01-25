@@ -1,0 +1,1836 @@
+﻿
+> Assets\Scenes\Optimization Scene\Optimization.unity:3740:  - component:
+{fileID: 214529949}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3741:  m_Layer: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3742:  m_Name: Dummies
+  Assets\Scenes\Optimization Scene\Optimization.unity:3743:  m_TagString:
+Untagged
+  Assets\Scenes\Optimization Scene\Optimization.unity:3744:  m_Icon: {fileID:
+0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3745:  m_NavMeshLayer: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3746:
+m_StaticEditorFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3747:  m_IsActive: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:3748:--- !u!4 &214529949
+  Assets\Scenes\Optimization Scene\Optimization.unity:3749:Transform:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3750:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3751:
+m_CorrespondingSourceObject: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3752:  m_PrefabInstance:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3753:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3754:  m_GameObject:
+{fileID: 214529948}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3755:
+serializedVersion: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:3756:  m_LocalRotation:
+{x: -0, y: 0.87854755, z: -0, w: 0.47765493}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3757:  m_LocalPosition:
+{x: -37.838005, y: -14.028001, z: -138.2}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3758:  m_LocalScale: {x:
+1, y: 1, z: 1}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3759:
+m_ConstrainProportionsScale: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3760:  m_Children:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3761:  - {fileID:
+1516062214}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3762:  m_Father:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3763:
+m_LocalEulerAnglesHint: {x: 0, y: 122.935, z: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3764:--- !u!1001
+&217601041
+  Assets\Scenes\Optimization Scene\Optimization.unity:3765:PrefabInstance:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3766:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3767:
+serializedVersion: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:3768:  m_Modification:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3769:
+serializedVersion: 3
+  Assets\Scenes\Optimization Scene\Optimization.unity:3770:
+m_TransformParent: {fileID: 1911066163}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3771:    m_Modifications:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3772:    - target:
+{fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3773:      propertyPath:
+m_Name
+  Assets\Scenes\Optimization Scene\Optimization.unity:3774:      value: torch 8
+  Assets\Scenes\Optimization Scene\Optimization.unity:3775:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3776:    - target:
+{fileID: 158424, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3777:      propertyPath:
+m_StaticEditorFlags
+  Assets\Scenes\Optimization Scene\Optimization.unity:3778:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3779:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3780:    - target:
+{fileID: 158954, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3781:      propertyPath:
+m_StaticEditorFlags
+  Assets\Scenes\Optimization Scene\Optimization.unity:3782:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3783:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3784:    - target:
+{fileID: 175198, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3785:      propertyPath:
+m_StaticEditorFlags
+  Assets\Scenes\Optimization Scene\Optimization.unity:3786:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3787:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3788:    - target:
+{fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3789:      propertyPath:
+m_RootOrder
+  Assets\Scenes\Optimization Scene\Optimization.unity:3790:      value: 8
+  Assets\Scenes\Optimization Scene\Optimization.unity:3791:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3792:    - target:
+{fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3793:      propertyPath:
+m_LocalPosition.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:3794:      value: 2.36
+  Assets\Scenes\Optimization Scene\Optimization.unity:3795:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3796:    - target:
+{fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3797:      propertyPath:
+m_LocalPosition.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:3798:      value: 4.79
+  Assets\Scenes\Optimization Scene\Optimization.unity:3799:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3800:    - target:
+{fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3801:      propertyPath:
+m_LocalPosition.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:3802:      value: 14.99
+  Assets\Scenes\Optimization Scene\Optimization.unity:3803:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3804:    - target:
+{fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3805:      propertyPath:
+m_LocalRotation.w
+  Assets\Scenes\Optimization Scene\Optimization.unity:3806:      value:
+-0.00000016292068
+  Assets\Scenes\Optimization Scene\Optimization.unity:3807:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3808:    - target:
+{fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3809:      propertyPath:
+m_LocalRotation.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:3810:      value:
+1.323489e-23
+  Assets\Scenes\Optimization Scene\Optimization.unity:3811:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3812:    - target:
+{fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3813:      propertyPath:
+m_LocalRotation.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:3814:      value: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:3815:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3816:    - target:
+{fileID: 406854, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3817:      propertyPath:
+m_LocalRotation.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:3818:      value:
+4.076481e-31
+  Assets\Scenes\Optimization Scene\Optimization.unity:3819:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3820:
+m_RemovedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:3821:
+m_RemovedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:3822:
+m_AddedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:3823:
+m_AddedComponents:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3824:    -
+targetCorrespondingSourceObject: {fileID: 175198, guid:
+2b28d52e9282f5844af4fa29dc0c1032,
+  Assets\Scenes\Optimization Scene\Optimization.unity:3825:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3826:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:3827:      addedObject:
+{fileID: 217601044}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3828:  m_SourcePrefab:
+{fileID: 100100000, guid: 2b28d52e9282f5844af4fa29dc0c1032, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3829:--- !u!4 &217601042
+stripped
+  Assets\Scenes\Optimization Scene\Optimization.unity:3830:Transform:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3831:
+m_CorrespondingSourceObject: {fileID: 406854, guid:
+2b28d52e9282f5844af4fa29dc0c1032,
+  Assets\Scenes\Optimization Scene\Optimization.unity:3832:    type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3833:  m_PrefabInstance:
+{fileID: 217601041}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3834:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3835:--- !u!1 &217601043
+stripped
+  Assets\Scenes\Optimization Scene\Optimization.unity:3836:GameObject:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3837:
+m_CorrespondingSourceObject: {fileID: 175198, guid:
+2b28d52e9282f5844af4fa29dc0c1032,
+  Assets\Scenes\Optimization Scene\Optimization.unity:3838:    type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3839:  m_PrefabInstance:
+{fileID: 217601041}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3840:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3841:--- !u!114
+&217601044
+  Assets\Scenes\Optimization Scene\Optimization.unity:3842:MonoBehaviour:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3843:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3844:
+m_CorrespondingSourceObject: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3845:  m_PrefabInstance:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3846:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3847:  m_GameObject:
+{fileID: 217601043}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3848:  m_Enabled: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:3849:
+m_EditorHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3850:  m_Script:
+{fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3851:  m_Name:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3852:
+m_EditorClassIdentifier:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3853:
+m_UsePipelineSettings: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:3854:
+m_AdditionalLightsShadowResolutionTier: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:3855:
+m_CustomShadowLayers: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3856:
+m_LightCookieSize: {x: 1, y: 1}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3857:
+m_LightCookieOffset: {x: 0, y: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3858:
+m_SoftShadowQuality: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3859:
+m_RenderingLayersMask:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3860:
+serializedVersion: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3861:    m_Bits: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:3862:
+m_ShadowRenderingLayersMask:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3863:
+serializedVersion: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3864:    m_Bits: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:3865:  m_Version: 4
+  Assets\Scenes\Optimization Scene\Optimization.unity:3866:  m_LightLayerMask:
+1
+  Assets\Scenes\Optimization Scene\Optimization.unity:3867:
+m_ShadowLayerMask: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:3868:
+m_RenderingLayers: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:3869:
+m_ShadowRenderingLayers: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:3870:--- !u!1001
+&219844662
+  Assets\Scenes\Optimization Scene\Optimization.unity:3871:PrefabInstance:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3872:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3873:
+serializedVersion: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:3874:  m_Modification:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3875:
+serializedVersion: 3
+  Assets\Scenes\Optimization Scene\Optimization.unity:3876:
+m_TransformParent: {fileID: 1142377051}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3877:    m_Modifications:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3878:    - target:
+{fileID: 125426, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3879:      propertyPath:
+m_Name
+  Assets\Scenes\Optimization Scene\Optimization.unity:3880:      value: floor63
+  Assets\Scenes\Optimization Scene\Optimization.unity:3881:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3882:    - target:
+{fileID: 125426, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3883:      propertyPath:
+m_StaticEditorFlags
+  Assets\Scenes\Optimization Scene\Optimization.unity:3884:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3885:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3886:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3887:      propertyPath:
+m_RootOrder
+  Assets\Scenes\Optimization Scene\Optimization.unity:3888:      value: 170
+  Assets\Scenes\Optimization Scene\Optimization.unity:3889:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3890:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3891:      propertyPath:
+m_LocalPosition.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:3892:      value: 12.5
+  Assets\Scenes\Optimization Scene\Optimization.unity:3893:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3894:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3895:      propertyPath:
+m_LocalPosition.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:3896:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3897:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3898:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3899:      propertyPath:
+m_LocalPosition.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:3900:      value: 21
+  Assets\Scenes\Optimization Scene\Optimization.unity:3901:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3902:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3903:      propertyPath:
+m_LocalRotation.w
+  Assets\Scenes\Optimization Scene\Optimization.unity:3904:      value: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:3905:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3906:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3907:      propertyPath:
+m_LocalRotation.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:3908:      value:
+0.000000021855694
+  Assets\Scenes\Optimization Scene\Optimization.unity:3909:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3910:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3911:      propertyPath:
+m_LocalRotation.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:3912:      value:
+-1.1102232e-16
+  Assets\Scenes\Optimization Scene\Optimization.unity:3913:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3914:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3915:      propertyPath:
+m_LocalRotation.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:3916:      value:
+1.1102232e-16
+  Assets\Scenes\Optimization Scene\Optimization.unity:3917:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3918:
+m_RemovedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:3919:
+m_RemovedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:3920:
+m_AddedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:3921:
+m_AddedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:3922:  m_SourcePrefab:
+{fileID: 100100000, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3923:--- !u!4 &219844663
+stripped
+  Assets\Scenes\Optimization Scene\Optimization.unity:3924:Transform:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3925:
+m_CorrespondingSourceObject: {fileID: 448002, guid:
+64cb684f38ab4e547a77225cd823cf62,
+  Assets\Scenes\Optimization Scene\Optimization.unity:3926:    type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3927:  m_PrefabInstance:
+{fileID: 219844662}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3928:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3929:--- !u!1001
+&222468165
+  Assets\Scenes\Optimization Scene\Optimization.unity:3930:PrefabInstance:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3931:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3932:
+serializedVersion: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:3933:  m_Modification:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3934:
+serializedVersion: 3
+  Assets\Scenes\Optimization Scene\Optimization.unity:3935:
+m_TransformParent: {fileID: 1142377051}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3936:    m_Modifications:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3937:    - target:
+{fileID: 124724, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3938:      propertyPath:
+m_Name
+  Assets\Scenes\Optimization Scene\Optimization.unity:3939:      value: box20
+  Assets\Scenes\Optimization Scene\Optimization.unity:3940:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3941:    - target:
+{fileID: 124724, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3942:      propertyPath:
+m_StaticEditorFlags
+  Assets\Scenes\Optimization Scene\Optimization.unity:3943:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3944:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3945:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3946:      propertyPath:
+m_RootOrder
+  Assets\Scenes\Optimization Scene\Optimization.unity:3947:      value: 227
+  Assets\Scenes\Optimization Scene\Optimization.unity:3948:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3949:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3950:      propertyPath:
+m_LocalPosition.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:3951:      value:
+34.870003
+  Assets\Scenes\Optimization Scene\Optimization.unity:3952:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3953:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3954:      propertyPath:
+m_LocalPosition.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:3955:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3956:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3957:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3958:      propertyPath:
+m_LocalPosition.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:3959:      value: 28.46
+  Assets\Scenes\Optimization Scene\Optimization.unity:3960:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3961:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3962:      propertyPath:
+m_LocalRotation.w
+  Assets\Scenes\Optimization Scene\Optimization.unity:3963:      value:
+0.7071067
+  Assets\Scenes\Optimization Scene\Optimization.unity:3964:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3965:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3966:      propertyPath:
+m_LocalRotation.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:3967:      value: -0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3968:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3969:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3970:      propertyPath:
+m_LocalRotation.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:3971:      value:
+0.7071068
+  Assets\Scenes\Optimization Scene\Optimization.unity:3972:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3973:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3974:      propertyPath:
+m_LocalRotation.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:3975:      value: -0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3976:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3977:
+m_RemovedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:3978:
+m_RemovedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:3979:
+m_AddedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:3980:
+m_AddedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:3981:  m_SourcePrefab:
+{fileID: 100100000, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3982:--- !u!4 &222468166
+stripped
+  Assets\Scenes\Optimization Scene\Optimization.unity:3983:Transform:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3984:
+m_CorrespondingSourceObject: {fileID: 490190, guid:
+a67e15b1ca208c641a5b4e1e20844590,
+  Assets\Scenes\Optimization Scene\Optimization.unity:3985:    type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3986:  m_PrefabInstance:
+{fileID: 222468165}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3987:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3988:--- !u!1001
+&242160194
+  Assets\Scenes\Optimization Scene\Optimization.unity:3989:PrefabInstance:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3990:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:3991:
+serializedVersion: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:3992:  m_Modification:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3993:
+serializedVersion: 3
+  Assets\Scenes\Optimization Scene\Optimization.unity:3994:
+m_TransformParent: {fileID: 1142377051}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3995:    m_Modifications:
+  Assets\Scenes\Optimization Scene\Optimization.unity:3996:    - target:
+{fileID: 125426, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:3997:      propertyPath:
+m_Name
+  Assets\Scenes\Optimization Scene\Optimization.unity:3998:      value: floor19
+  Assets\Scenes\Optimization Scene\Optimization.unity:3999:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4000:    - target:
+{fileID: 125426, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4001:      propertyPath:
+m_StaticEditorFlags
+  Assets\Scenes\Optimization Scene\Optimization.unity:4002:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4003:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4004:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4005:      propertyPath:
+m_RootOrder
+  Assets\Scenes\Optimization Scene\Optimization.unity:4006:      value: 127
+  Assets\Scenes\Optimization Scene\Optimization.unity:4007:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4008:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4009:      propertyPath:
+m_LocalPosition.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:4010:      value: 52.5
+  Assets\Scenes\Optimization Scene\Optimization.unity:4011:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4012:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4013:      propertyPath:
+m_LocalPosition.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:4014:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4015:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4016:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4017:      propertyPath:
+m_LocalPosition.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:4018:      value: 13
+  Assets\Scenes\Optimization Scene\Optimization.unity:4019:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4020:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4021:      propertyPath:
+m_LocalRotation.w
+  Assets\Scenes\Optimization Scene\Optimization.unity:4022:      value: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4023:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4024:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4025:      propertyPath:
+m_LocalRotation.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:4026:      value:
+0.000000021855694
+  Assets\Scenes\Optimization Scene\Optimization.unity:4027:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4028:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4029:      propertyPath:
+m_LocalRotation.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:4030:      value:
+-1.1102232e-16
+  Assets\Scenes\Optimization Scene\Optimization.unity:4031:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4032:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4033:      propertyPath:
+m_LocalRotation.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:4034:      value:
+1.1102232e-16
+  Assets\Scenes\Optimization Scene\Optimization.unity:4035:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4036:
+m_RemovedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:4037:
+m_RemovedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:4038:
+m_AddedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:4039:
+m_AddedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:4040:  m_SourcePrefab:
+{fileID: 100100000, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4041:--- !u!4 &242160195
+stripped
+  Assets\Scenes\Optimization Scene\Optimization.unity:4042:Transform:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4043:
+m_CorrespondingSourceObject: {fileID: 448002, guid:
+64cb684f38ab4e547a77225cd823cf62,
+  Assets\Scenes\Optimization Scene\Optimization.unity:4044:    type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4045:  m_PrefabInstance:
+{fileID: 242160194}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4046:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4047:--- !u!1 &242587521
+  Assets\Scenes\Optimization Scene\Optimization.unity:4048:GameObject:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4049:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4050:
+m_CorrespondingSourceObject: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4051:  m_PrefabInstance:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4052:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4053:
+serializedVersion: 6
+  Assets\Scenes\Optimization Scene\Optimization.unity:4054:  m_Component:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4055:  - component:
+{fileID: 242587522}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4056:  - component:
+{fileID: 242587525}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4057:  - component:
+{fileID: 242587524}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4058:  - component:
+{fileID: 242587523}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4059:  m_Layer: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4060:  m_Name: Cube (26)
+  Assets\Scenes\Optimization Scene\Optimization.unity:4061:  m_TagString:
+Untagged
+  Assets\Scenes\Optimization Scene\Optimization.unity:4062:  m_Icon: {fileID:
+0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4063:  m_NavMeshLayer: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4064:
+m_StaticEditorFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4065:  m_IsActive: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4066:--- !u!4 &242587522
+  Assets\Scenes\Optimization Scene\Optimization.unity:4067:Transform:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4068:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4069:
+m_CorrespondingSourceObject: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4070:  m_PrefabInstance:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4071:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4072:  m_GameObject:
+{fileID: 242587521}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4073:
+serializedVersion: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:4074:  m_LocalRotation:
+{x: 0, y: 0, z: 0, w: 1}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4075:  m_LocalPosition:
+{x: 0, y: 0, z: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4076:  m_LocalScale: {x:
+1, y: 1, z: 1}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4077:
+m_ConstrainProportionsScale: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4078:  m_Children: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:4079:  m_Father:
+{fileID: 1516062214}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4080:
+m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4081:--- !u!65 &242587523
+  Assets\Scenes\Optimization Scene\Optimization.unity:4082:BoxCollider:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4083:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4084:
+m_CorrespondingSourceObject: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4085:  m_PrefabInstance:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4086:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4087:  m_GameObject:
+{fileID: 242587521}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4088:  m_Material:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4089:  m_IncludeLayers:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4090:
+serializedVersion: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:4091:    m_Bits: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4092:  m_ExcludeLayers:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4093:
+serializedVersion: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:4094:    m_Bits: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4095:
+m_LayerOverridePriority: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4096:  m_IsTrigger: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4097:
+m_ProvidesContacts: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4098:  m_Enabled: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4099:
+serializedVersion: 3
+  Assets\Scenes\Optimization Scene\Optimization.unity:4100:  m_Size: {x: 1, y:
+1, z: 1}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4101:  m_Center: {x: 0,
+y: 0, z: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4102:--- !u!23 &242587524
+  Assets\Scenes\Optimization Scene\Optimization.unity:4103:MeshRenderer:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4104:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4105:
+m_CorrespondingSourceObject: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4106:  m_PrefabInstance:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4107:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4108:  m_GameObject:
+{fileID: 242587521}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4109:  m_Enabled: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4110:  m_CastShadows: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4111:  m_ReceiveShadows:
+1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4112:
+m_DynamicOccludee: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4113:
+m_StaticShadowCaster: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4114:  m_MotionVectors: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4115:
+m_LightProbeUsage: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4116:
+m_ReflectionProbeUsage: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4117:  m_RayTracingMode:
+2
+  Assets\Scenes\Optimization Scene\Optimization.unity:4118:
+m_RayTraceProcedural: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4119:
+m_RayTracingAccelStructBuildFlagsOverride: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4120:
+m_RayTracingAccelStructBuildFlags: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4121:
+m_SmallMeshCulling: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4122:  m_ForceMeshLod: -1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4123:
+m_MeshLodSelectionBias: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4124:
+m_RenderingLayerMask: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4125:
+m_RendererPriority: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4126:  m_Materials:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4127:  - {fileID:
+2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4128:  m_StaticBatchInfo:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4129:    firstSubMesh: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4130:    subMeshCount: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4131:
+m_StaticBatchRoot: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4132:  m_ProbeAnchor:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4133:
+m_LightProbeVolumeOverride: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4134:
+m_ScaleInLightmap: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4135:  m_ReceiveGI: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4136:  m_PreserveUVs: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4137:
+m_IgnoreNormalsForChartDetection: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4138:  m_ImportantGI: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4139:
+m_StitchLightmapSeams: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4140:
+m_SelectedEditorRenderState: 3
+  Assets\Scenes\Optimization Scene\Optimization.unity:4141:
+m_MinimumChartSize: 4
+  Assets\Scenes\Optimization Scene\Optimization.unity:4142:
+m_AutoUVMaxDistance: 0.5
+  Assets\Scenes\Optimization Scene\Optimization.unity:4143:  m_AutoUVMaxAngle:
+89
+  Assets\Scenes\Optimization Scene\Optimization.unity:4144:
+m_LightmapParameters: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4145:
+m_GlobalIlluminationMeshLod: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4146:  m_SortingLayerID:
+0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4147:  m_SortingLayer: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4148:  m_SortingOrder: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4149:
+m_MaskInteraction: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4150:
+m_AdditionalVertexStreams: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4151:--- !u!33 &242587525
+  Assets\Scenes\Optimization Scene\Optimization.unity:4152:MeshFilter:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4153:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4154:
+m_CorrespondingSourceObject: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4155:  m_PrefabInstance:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4156:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4157:  m_GameObject:
+{fileID: 242587521}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4158:  m_Mesh: {fileID:
+10202, guid: 0000000000000000e000000000000000, type: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4159:--- !u!1001
+&252052093
+  Assets\Scenes\Optimization Scene\Optimization.unity:4160:PrefabInstance:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4161:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4162:
+serializedVersion: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:4163:  m_Modification:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4164:
+serializedVersion: 3
+  Assets\Scenes\Optimization Scene\Optimization.unity:4165:
+m_TransformParent: {fileID: 1142377051}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4166:    m_Modifications:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4167:    - target:
+{fileID: 125426, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4168:      propertyPath:
+m_Name
+  Assets\Scenes\Optimization Scene\Optimization.unity:4169:      value: floor32
+  Assets\Scenes\Optimization Scene\Optimization.unity:4170:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4171:    - target:
+{fileID: 125426, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4172:      propertyPath:
+m_StaticEditorFlags
+  Assets\Scenes\Optimization Scene\Optimization.unity:4173:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4174:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4175:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4176:      propertyPath:
+m_RootOrder
+  Assets\Scenes\Optimization Scene\Optimization.unity:4177:      value: 72
+  Assets\Scenes\Optimization Scene\Optimization.unity:4178:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4179:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4180:      propertyPath:
+m_LocalPosition.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:4181:      value: 12.5
+  Assets\Scenes\Optimization Scene\Optimization.unity:4182:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4183:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4184:      propertyPath:
+m_LocalPosition.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:4185:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4186:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4187:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4188:      propertyPath:
+m_LocalPosition.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:4189:      value: -13
+  Assets\Scenes\Optimization Scene\Optimization.unity:4190:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4191:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4192:      propertyPath:
+m_LocalRotation.w
+  Assets\Scenes\Optimization Scene\Optimization.unity:4193:      value: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:4194:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4195:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4196:      propertyPath:
+m_LocalRotation.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:4197:      value:
+0.000000021855694
+  Assets\Scenes\Optimization Scene\Optimization.unity:4198:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4199:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4200:      propertyPath:
+m_LocalRotation.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:4201:      value:
+-1.1102232e-16
+  Assets\Scenes\Optimization Scene\Optimization.unity:4202:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4203:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4204:      propertyPath:
+m_LocalRotation.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:4205:      value:
+1.1102232e-16
+  Assets\Scenes\Optimization Scene\Optimization.unity:4206:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4207:
+m_RemovedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:4208:
+m_RemovedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:4209:
+m_AddedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:4210:
+m_AddedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:4211:  m_SourcePrefab:
+{fileID: 100100000, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4212:--- !u!4 &252052094
+stripped
+  Assets\Scenes\Optimization Scene\Optimization.unity:4213:Transform:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4214:
+m_CorrespondingSourceObject: {fileID: 448002, guid:
+64cb684f38ab4e547a77225cd823cf62,
+  Assets\Scenes\Optimization Scene\Optimization.unity:4215:    type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4216:  m_PrefabInstance:
+{fileID: 252052093}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4217:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4218:--- !u!1001
+&256630553
+  Assets\Scenes\Optimization Scene\Optimization.unity:4219:PrefabInstance:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4220:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4221:
+serializedVersion: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:4222:  m_Modification:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4223:
+serializedVersion: 3
+  Assets\Scenes\Optimization Scene\Optimization.unity:4224:
+m_TransformParent: {fileID: 1142377051}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4225:    m_Modifications:
+  Assets\Scenes\Optimization Scene\Optimization.unity:4226:    - target:
+{fileID: 124164, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4227:      propertyPath:
+m_Name
+  Assets\Scenes\Optimization Scene\Optimization.unity:4228:      value: wall55
+  Assets\Scenes\Optimization Scene\Optimization.unity:4229:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4230:    - target:
+{fileID: 124164, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4231:      propertyPath:
+m_StaticEditorFlags
+  Assets\Scenes\Optimization Scene\Optimization.unity:4232:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:4233:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4234:    - target:
+{fileID: 473004, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4235:      propertyPath:
+m_RootOrder
+  Assets\Scenes\Optimization Scene\Optimization.unity:4236:      value: 188
+  Assets\Scenes\Optimization Scene\Optimization.unity:4237:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4238:    - target:
+{fileID: 473004, guid: e38067ccaff52424db35c2958d80cb11, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:4239:      propertyPath:
+m_LocalPosition.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:4240:      value: 82.5
+> Assets\Scenes\Optimization Scene\Optimization.unity:22232:
+m_TransformParent: {fileID: 214529949}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22233:
+m_Modifications:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22234:    - target:
+{fileID: 1055365131978013735, guid: cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22235:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22236:
+propertyPath: m_Name
+  Assets\Scenes\Optimization Scene\Optimization.unity:22237:      value:
+MovingObject
+  Assets\Scenes\Optimization Scene\Optimization.unity:22238:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22239:    - target:
+{fileID: 8306018241457177105, guid: cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22240:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22241:
+propertyPath: m_LocalPosition.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:22242:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22243:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22244:    - target:
+{fileID: 8306018241457177105, guid: cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22245:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22246:
+propertyPath: m_LocalPosition.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:22247:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22248:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22249:    - target:
+{fileID: 8306018241457177105, guid: cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22250:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22251:
+propertyPath: m_LocalPosition.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:22252:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22253:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22254:    - target:
+{fileID: 8306018241457177105, guid: cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22255:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22256:
+propertyPath: m_LocalRotation.w
+  Assets\Scenes\Optimization Scene\Optimization.unity:22257:      value: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22258:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22259:    - target:
+{fileID: 8306018241457177105, guid: cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22260:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22261:
+propertyPath: m_LocalRotation.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:22262:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22263:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22264:    - target:
+{fileID: 8306018241457177105, guid: cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22265:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22266:
+propertyPath: m_LocalRotation.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:22267:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22268:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22269:    - target:
+{fileID: 8306018241457177105, guid: cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22270:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22271:
+propertyPath: m_LocalRotation.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:22272:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22273:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22274:    - target:
+{fileID: 8306018241457177105, guid: cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22275:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22276:
+propertyPath: m_LocalEulerAnglesHint.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:22277:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22278:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22279:    - target:
+{fileID: 8306018241457177105, guid: cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22280:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22281:
+propertyPath: m_LocalEulerAnglesHint.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:22282:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22283:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22284:    - target:
+{fileID: 8306018241457177105, guid: cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22285:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22286:
+propertyPath: m_LocalEulerAnglesHint.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:22287:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22288:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22289:
+m_RemovedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22290:
+m_RemovedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22291:
+m_AddedGameObjects:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22292:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22293:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22294:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22295:      addedObject:
+{fileID: 2124851447}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22296:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22297:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22298:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22299:      addedObject:
+{fileID: 2033388328}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22300:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22301:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22302:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22303:      addedObject:
+{fileID: 1353504179}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22304:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22305:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22306:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22307:      addedObject:
+{fileID: 1255198497}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22308:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22309:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22310:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22311:      addedObject:
+{fileID: 606369482}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22312:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22313:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22314:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22315:      addedObject:
+{fileID: 36004467}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22316:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22317:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22318:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22319:      addedObject:
+{fileID: 1108020654}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22320:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22321:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22322:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22323:      addedObject:
+{fileID: 1235548107}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22324:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22325:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22326:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22327:      addedObject:
+{fileID: 1287471965}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22328:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22329:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22330:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22331:      addedObject:
+{fileID: 1902522648}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22332:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22333:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22334:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22335:      addedObject:
+{fileID: 1209558933}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22336:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22337:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22338:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22339:      addedObject:
+{fileID: 747970849}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22340:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22341:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22342:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22343:      addedObject:
+{fileID: 376791662}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22344:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22345:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22346:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22347:      addedObject:
+{fileID: 50812953}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22348:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22349:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22350:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22351:      addedObject:
+{fileID: 180210317}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22352:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22353:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22354:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22355:      addedObject:
+{fileID: 671243033}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22356:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22357:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22358:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22359:      addedObject:
+{fileID: 1569263065}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22360:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22361:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22362:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22363:      addedObject:
+{fileID: 754231540}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22364:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22365:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22366:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22367:      addedObject:
+{fileID: 152396062}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22368:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22369:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22370:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22371:      addedObject:
+{fileID: 1415848771}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22372:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22373:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22374:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22375:      addedObject:
+{fileID: 380433418}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22376:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22377:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22378:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22379:      addedObject:
+{fileID: 287738945}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22380:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22381:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22382:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22383:      addedObject:
+{fileID: 869125160}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22384:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22385:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22386:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22387:      addedObject:
+{fileID: 1152440130}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22388:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22389:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22390:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22391:      addedObject:
+{fileID: 783628043}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22392:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22393:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22394:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22395:      addedObject:
+{fileID: 242587522}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22396:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22397:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22398:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22399:      addedObject:
+{fileID: 2030162282}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22400:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22401:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22402:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22403:      addedObject:
+{fileID: 335491608}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22404:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22405:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22406:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22407:      addedObject:
+{fileID: 1139569045}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22408:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22409:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22410:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22411:      addedObject:
+{fileID: 1230490259}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22412:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22413:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22414:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22415:      addedObject:
+{fileID: 280970597}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22416:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22417:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22418:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22419:      addedObject:
+{fileID: 1896098023}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22420:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22421:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22422:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22423:      addedObject:
+{fileID: 1307110208}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22424:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22425:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22426:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22427:      addedObject:
+{fileID: 1670857934}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22428:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22429:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22430:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22431:      addedObject:
+{fileID: 1448534428}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22432:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22433:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22434:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22435:      addedObject:
+{fileID: 595847807}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22436:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22437:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22438:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22439:      addedObject:
+{fileID: 491156195}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22440:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22441:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22442:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22443:      addedObject:
+{fileID: 1114563400}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22444:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22445:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22446:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22447:      addedObject:
+{fileID: 1046052667}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22448:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22449:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22450:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22451:      addedObject:
+{fileID: 1358811333}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22452:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22453:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22454:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22455:      addedObject:
+{fileID: 1694977559}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22456:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22457:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22458:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22459:      addedObject:
+{fileID: 1070100599}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22460:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22461:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22462:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22463:      addedObject:
+{fileID: 2058526479}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22464:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22465:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22466:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22467:      addedObject:
+{fileID: 82191664}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22468:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22469:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22470:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22471:      addedObject:
+{fileID: 2058617910}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22472:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22473:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22474:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22475:      addedObject:
+{fileID: 1199593458}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22476:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22477:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22478:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22479:      addedObject:
+{fileID: 569112622}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22480:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22481:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22482:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22483:      addedObject:
+{fileID: 767189727}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22484:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22485:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22486:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22487:      addedObject:
+{fileID: 1251926759}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22488:    -
+targetCorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22489:        type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22490:      insertIndex:
+-1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22491:      addedObject:
+{fileID: 452959816}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22492:
+m_AddedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22493:  m_SourcePrefab:
+{fileID: 100100000, guid: cec3e1cc8ce72d44db5ea9ff5edb103c, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22494:--- !u!4
+&1516062214 stripped
+  Assets\Scenes\Optimization Scene\Optimization.unity:22495:Transform:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22496:
+m_CorrespondingSourceObject: {fileID: 8306018241457177105, guid:
+cec3e1cc8ce72d44db5ea9ff5edb103c,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22497:    type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22498:
+m_PrefabInstance: {fileID: 1516062213}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22499:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22500:--- !u!1001
+&1518868697
+  Assets\Scenes\Optimization Scene\Optimization.unity:22501:PrefabInstance:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22502:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22503:
+serializedVersion: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:22504:  m_Modification:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22505:
+serializedVersion: 3
+  Assets\Scenes\Optimization Scene\Optimization.unity:22506:
+m_TransformParent: {fileID: 1142377051}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22507:
+m_Modifications:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22508:    - target:
+{fileID: 125426, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22509:
+propertyPath: m_Name
+  Assets\Scenes\Optimization Scene\Optimization.unity:22510:      value:
+floor22
+  Assets\Scenes\Optimization Scene\Optimization.unity:22511:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22512:    - target:
+{fileID: 125426, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22513:
+propertyPath: m_StaticEditorFlags
+  Assets\Scenes\Optimization Scene\Optimization.unity:22514:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22515:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22516:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22517:
+propertyPath: m_RootOrder
+  Assets\Scenes\Optimization Scene\Optimization.unity:22518:      value: 44
+  Assets\Scenes\Optimization Scene\Optimization.unity:22519:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22520:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22521:
+propertyPath: m_LocalPosition.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:22522:      value: 36.5
+  Assets\Scenes\Optimization Scene\Optimization.unity:22523:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22524:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22525:
+propertyPath: m_LocalPosition.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:22526:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22527:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22528:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22529:
+propertyPath: m_LocalPosition.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:22530:      value: -21
+  Assets\Scenes\Optimization Scene\Optimization.unity:22531:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22532:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22533:
+propertyPath: m_LocalRotation.w
+  Assets\Scenes\Optimization Scene\Optimization.unity:22534:      value: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22535:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22536:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22537:
+propertyPath: m_LocalRotation.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:22538:      value:
+0.000000021855694
+  Assets\Scenes\Optimization Scene\Optimization.unity:22539:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22540:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22541:
+propertyPath: m_LocalRotation.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:22542:      value:
+-1.1102232e-16
+  Assets\Scenes\Optimization Scene\Optimization.unity:22543:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22544:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22545:
+propertyPath: m_LocalRotation.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:22546:      value:
+1.1102232e-16
+  Assets\Scenes\Optimization Scene\Optimization.unity:22547:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22548:
+m_RemovedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22549:
+m_RemovedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22550:
+m_AddedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22551:
+m_AddedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22552:  m_SourcePrefab:
+{fileID: 100100000, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22553:--- !u!4
+&1518868698 stripped
+  Assets\Scenes\Optimization Scene\Optimization.unity:22554:Transform:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22555:
+m_CorrespondingSourceObject: {fileID: 448002, guid:
+64cb684f38ab4e547a77225cd823cf62,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22556:    type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22557:
+m_PrefabInstance: {fileID: 1518868697}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22558:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22559:--- !u!1001
+&1538362596
+  Assets\Scenes\Optimization Scene\Optimization.unity:22560:PrefabInstance:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22561:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22562:
+serializedVersion: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:22563:  m_Modification:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22564:
+serializedVersion: 3
+  Assets\Scenes\Optimization Scene\Optimization.unity:22565:
+m_TransformParent: {fileID: 1142377051}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22566:
+m_Modifications:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22567:    - target:
+{fileID: 158938, guid: 603974aa53b216142bc3b923a72e69a2, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22568:
+propertyPath: m_Name
+  Assets\Scenes\Optimization Scene\Optimization.unity:22569:      value: bed3
+  Assets\Scenes\Optimization Scene\Optimization.unity:22570:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22571:    - target:
+{fileID: 158938, guid: 603974aa53b216142bc3b923a72e69a2, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22572:
+propertyPath: m_StaticEditorFlags
+  Assets\Scenes\Optimization Scene\Optimization.unity:22573:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22574:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22575:    - target:
+{fileID: 439624, guid: 603974aa53b216142bc3b923a72e69a2, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22576:
+propertyPath: m_RootOrder
+  Assets\Scenes\Optimization Scene\Optimization.unity:22577:      value: 62
+  Assets\Scenes\Optimization Scene\Optimization.unity:22578:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22579:    - target:
+{fileID: 439624, guid: 603974aa53b216142bc3b923a72e69a2, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22580:
+propertyPath: m_LocalPosition.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:22581:      value:
+26.150002
+  Assets\Scenes\Optimization Scene\Optimization.unity:22582:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22583:    - target:
+{fileID: 439624, guid: 603974aa53b216142bc3b923a72e69a2, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22584:
+propertyPath: m_LocalPosition.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:22585:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22586:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22587:    - target:
+{fileID: 439624, guid: 603974aa53b216142bc3b923a72e69a2, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22588:
+propertyPath: m_LocalPosition.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:22589:      value: -28.66
+  Assets\Scenes\Optimization Scene\Optimization.unity:22590:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22591:    - target:
+{fileID: 439624, guid: 603974aa53b216142bc3b923a72e69a2, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22592:
+propertyPath: m_LocalRotation.w
+  Assets\Scenes\Optimization Scene\Optimization.unity:22593:      value:
+0.712026
+  Assets\Scenes\Optimization Scene\Optimization.unity:22594:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22595:    - target:
+{fileID: 439624, guid: 603974aa53b216142bc3b923a72e69a2, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22596:
+propertyPath: m_LocalRotation.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:22597:      value: -0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22598:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22599:    - target:
+{fileID: 439624, guid: 603974aa53b216142bc3b923a72e69a2, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22600:
+propertyPath: m_LocalRotation.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:22601:      value:
+-0.7021531
+  Assets\Scenes\Optimization Scene\Optimization.unity:22602:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22603:    - target:
+{fileID: 439624, guid: 603974aa53b216142bc3b923a72e69a2, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22604:
+propertyPath: m_LocalRotation.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:22605:      value: -0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22606:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22607:
+m_RemovedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22608:
+m_RemovedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22609:
+m_AddedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22610:
+m_AddedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22611:  m_SourcePrefab:
+{fileID: 100100000, guid: 603974aa53b216142bc3b923a72e69a2, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22612:--- !u!4
+&1538362597 stripped
+  Assets\Scenes\Optimization Scene\Optimization.unity:22613:Transform:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22614:
+m_CorrespondingSourceObject: {fileID: 439624, guid:
+603974aa53b216142bc3b923a72e69a2,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22615:    type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22616:
+m_PrefabInstance: {fileID: 1538362596}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22617:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22618:--- !u!1001
+&1541035832
+  Assets\Scenes\Optimization Scene\Optimization.unity:22619:PrefabInstance:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22620:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22621:
+serializedVersion: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:22622:  m_Modification:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22623:
+serializedVersion: 3
+  Assets\Scenes\Optimization Scene\Optimization.unity:22624:
+m_TransformParent: {fileID: 1142377051}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22625:
+m_Modifications:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22626:    - target:
+{fileID: 124724, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22627:
+propertyPath: m_Name
+  Assets\Scenes\Optimization Scene\Optimization.unity:22628:      value: box24
+  Assets\Scenes\Optimization Scene\Optimization.unity:22629:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22630:    - target:
+{fileID: 124724, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22631:
+propertyPath: m_StaticEditorFlags
+  Assets\Scenes\Optimization Scene\Optimization.unity:22632:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22633:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22634:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22635:
+propertyPath: m_RootOrder
+  Assets\Scenes\Optimization Scene\Optimization.unity:22636:      value: 241
+  Assets\Scenes\Optimization Scene\Optimization.unity:22637:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22638:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22639:
+propertyPath: m_LocalPosition.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:22640:      value:
+9.709999
+  Assets\Scenes\Optimization Scene\Optimization.unity:22641:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22642:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22643:
+propertyPath: m_LocalPosition.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:22644:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22645:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22646:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22647:
+propertyPath: m_LocalPosition.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:22648:      value:
+19.849998
+  Assets\Scenes\Optimization Scene\Optimization.unity:22649:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22650:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22651:
+propertyPath: m_LocalRotation.w
+  Assets\Scenes\Optimization Scene\Optimization.unity:22652:      value:
+0.7071067
+  Assets\Scenes\Optimization Scene\Optimization.unity:22653:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22654:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22655:
+propertyPath: m_LocalRotation.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:22656:      value: -0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22657:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22658:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22659:
+propertyPath: m_LocalRotation.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:22660:      value:
+0.7071068
+  Assets\Scenes\Optimization Scene\Optimization.unity:22661:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22662:    - target:
+{fileID: 490190, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22663:
+propertyPath: m_LocalRotation.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:22664:      value: -0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22665:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22666:
+m_RemovedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22667:
+m_RemovedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22668:
+m_AddedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22669:
+m_AddedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22670:  m_SourcePrefab:
+{fileID: 100100000, guid: a67e15b1ca208c641a5b4e1e20844590, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22671:--- !u!4
+&1541035833 stripped
+  Assets\Scenes\Optimization Scene\Optimization.unity:22672:Transform:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22673:
+m_CorrespondingSourceObject: {fileID: 490190, guid:
+a67e15b1ca208c641a5b4e1e20844590,
+  Assets\Scenes\Optimization Scene\Optimization.unity:22674:    type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22675:
+m_PrefabInstance: {fileID: 1541035832}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22676:  m_PrefabAsset:
+{fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22677:--- !u!1001
+&1545256496
+  Assets\Scenes\Optimization Scene\Optimization.unity:22678:PrefabInstance:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22679:
+m_ObjectHideFlags: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22680:
+serializedVersion: 2
+  Assets\Scenes\Optimization Scene\Optimization.unity:22681:  m_Modification:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22682:
+serializedVersion: 3
+  Assets\Scenes\Optimization Scene\Optimization.unity:22683:
+m_TransformParent: {fileID: 1142377051}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22684:
+m_Modifications:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22685:    - target:
+{fileID: 125426, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22686:
+propertyPath: m_Name
+  Assets\Scenes\Optimization Scene\Optimization.unity:22687:      value:
+floor75
+  Assets\Scenes\Optimization Scene\Optimization.unity:22688:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22689:    - target:
+{fileID: 125426, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22690:
+propertyPath: m_StaticEditorFlags
+  Assets\Scenes\Optimization Scene\Optimization.unity:22691:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22692:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22693:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22694:
+propertyPath: m_RootOrder
+  Assets\Scenes\Optimization Scene\Optimization.unity:22695:      value: 196
+  Assets\Scenes\Optimization Scene\Optimization.unity:22696:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22697:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22698:
+propertyPath: m_LocalPosition.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:22699:      value: 100.5
+  Assets\Scenes\Optimization Scene\Optimization.unity:22700:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22701:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22702:
+propertyPath: m_LocalPosition.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:22703:      value: 0
+  Assets\Scenes\Optimization Scene\Optimization.unity:22704:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22705:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22706:
+propertyPath: m_LocalPosition.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:22707:      value: -5
+  Assets\Scenes\Optimization Scene\Optimization.unity:22708:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22709:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22710:
+propertyPath: m_LocalRotation.w
+  Assets\Scenes\Optimization Scene\Optimization.unity:22711:      value: 1
+  Assets\Scenes\Optimization Scene\Optimization.unity:22712:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22713:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22714:
+propertyPath: m_LocalRotation.x
+  Assets\Scenes\Optimization Scene\Optimization.unity:22715:      value:
+0.000000021855694
+  Assets\Scenes\Optimization Scene\Optimization.unity:22716:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22717:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22718:
+propertyPath: m_LocalRotation.y
+  Assets\Scenes\Optimization Scene\Optimization.unity:22719:      value:
+-1.1102232e-16
+  Assets\Scenes\Optimization Scene\Optimization.unity:22720:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22721:    - target:
+{fileID: 448002, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22722:
+propertyPath: m_LocalRotation.z
+  Assets\Scenes\Optimization Scene\Optimization.unity:22723:      value:
+1.1102232e-16
+  Assets\Scenes\Optimization Scene\Optimization.unity:22724:
+objectReference: {fileID: 0}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22725:
+m_RemovedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22726:
+m_RemovedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22727:
+m_AddedGameObjects: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22728:
+m_AddedComponents: []
+  Assets\Scenes\Optimization Scene\Optimization.unity:22729:  m_SourcePrefab:
+{fileID: 100100000, guid: 64cb684f38ab4e547a77225cd823cf62, type: 3}
+  Assets\Scenes\Optimization Scene\Optimization.unity:22730:--- !u!4
+&1545256497 stripped
+  Assets\Scenes\Optimization Scene\Optimization.unity:22731:Transform:
+  Assets\Scenes\Optimization Scene\Optimization.unity:22732:
+m_CorrespondingSourceObject: {fileID: 448002, guid:
+64cb684f38ab4e547a77225cd823cf62,
+> Assets\Scenes\Optimization Scene\Optimization.unity:29625:  - {fileID:
+214529949}

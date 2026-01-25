@@ -10,7 +10,13 @@ public class GameManager : MonoBehaviour
     public PlayerCharacterController playerCharacterController;
     [SerializeField] private FireHazardScriptableObject[] fireHazardScriptableObjects;
     [SerializeField] private FireHazard[] fireHazards;
-
+    
+    
+    public void HandleCharacterEnteredFire(FireEnteredEventArgs args)
+    {
+        args.targetCharacterController.TakeDamage(args.damageDealt);
+    }
+    
     private void Start()
     {
         foreach (FireHazard fireHazard in fireHazards)
@@ -22,9 +28,4 @@ public class GameManager : MonoBehaviour
       
     }
 
-    public void HandleCharacterEnteredFire(FireEnteredEventArgs args)
-    {
-        args.targetCharacterController.TakeDamage(args.damageDealt);
-    }
-    
 }

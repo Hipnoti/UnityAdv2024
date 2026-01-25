@@ -40,4 +40,14 @@ public class LevelManager : MonoBehaviour
         Debug.Log("Loading complete!");
         loadedSector = asyncOperationHandle.Result;
     }
+
+    private void Start()
+    {
+        
+    }
+
+    private void Update()
+    {
+        
+    }
 }
