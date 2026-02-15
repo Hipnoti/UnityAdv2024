@@ -13,11 +13,11 @@ public class SoundManager : MonoBehaviour
     // [SerializeField] private AudioMixerGroup sfxMixer;
     // [SerializeField] private AudioMixerGroup musicMixer;
 
-    public void MasterVolumeSliderChanged(float newValue)
-    {
-        float actualVolumeValue = (1 - newValue) * -40;
-        masterMixer.audioMixer.SetFloat(MASTER_VOLUME_PARAMETER, actualVolumeValue);
-    }
+    // public void MasterVolumeSliderChanged(float newValue)
+    // {
+    //     float actualVolumeValue = (1 - newValue) * -40;
+    //     masterMixer.audioMixer.SetFloat(MASTER_VOLUME_PARAMETER, actualVolumeValue);
+    // }
     
     // public void SFXVolumeSliderChanged(float newValue)
     // {
