@@ -6468,7 +6468,8 @@ PrefabInstance:
         type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: -5741181987959468431, guid: eb570cf1af8f30a45a18dad60ec53647,
+        type: 2}
     - target: {fileID: 4694815534820012663, guid: 917d8b68eb2c4c941a7303611e8c74c4,
         type: 3}
       propertyPath: m_Name
@@ -8850,6 +8851,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: SFX Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184501070525083248, guid: 73ff9e34261ce34469a0ce674499c264,
+        type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 8120504365662438115, guid: 73ff9e34261ce34469a0ce674499c264,
         type: 3}
@@ -18691,6 +18697,11 @@ PrefabInstance:
       propertyPath: m_text
       value: Music Volume
       objectReference: {fileID: 0}
+    - target: {fileID: 5184501070525083248, guid: 73ff9e34261ce34469a0ce674499c264,
+        type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 8120504365662438115, guid: 73ff9e34261ce34469a0ce674499c264,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -19075,14 +19086,14 @@ AudioSource:
   m_GameObject: {fileID: 1719998938}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 7518663937677244859, guid: 425445d1941ff414c9d5486eab77a80e,
+  OutputAudioMixerGroup: {fileID: -8717267446696196474, guid: eb570cf1af8f30a45a18dad60ec53647,
     type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 8f88f940fb129504f9d3e89ff6266df9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -20004,7 +20015,8 @@ PrefabInstance:
         type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: -5741181987959468431, guid: eb570cf1af8f30a45a18dad60ec53647,
+        type: 2}
     - target: {fileID: 4694815534820012663, guid: 917d8b68eb2c4c941a7303611e8c74c4,
         type: 3}
       propertyPath: m_Name
@@ -22301,7 +22313,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2013106644
 Transform:
   m_ObjectHideFlags: 0
@@ -23424,7 +23436,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b45e864e12665e94aa6a6a5c0b5be5c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  masterMixer: {fileID: 24300002, guid: 425445d1941ff414c9d5486eab77a80e, type: 2}
+  HZ: 50000
+  masterMixer: {fileID: 24300002, guid: eb570cf1af8f30a45a18dad60ec53647, type: 2}
 --- !u!1001 &1701056887595181982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23528,7 +23541,8 @@ PrefabInstance:
         type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: -5741181987959468431, guid: eb570cf1af8f30a45a18dad60ec53647,
+        type: 2}
     - target: {fileID: 2477434971597152021, guid: 917d8b68eb2c4c941a7303611e8c74c4,
         type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
@@ -23691,6 +23705,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184501070525083248, guid: 73ff9e34261ce34469a0ce674499c264,
+        type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 8120504365662438115, guid: 73ff9e34261ce34469a0ce674499c264,
         type: 3}
