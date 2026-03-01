@@ -4,15 +4,18 @@ using Unity.Collections;
 
 public struct MultiplyJob : IJob
 {
+    public NativeReference<long> result;
     public NativeArray<int> numbersToMultiply;
-    public NativeArray<int> result;
-
-    //Part of IJob
+    
     public void Execute()
     {
+        for (int i = 0; i < numbersToMultiply.Length; i++)
+        {
+            numbersToMultiply[i] = i + 1;
+        }
         for (int i = 0; i < numbersToMultiply.Length - 1; i++)
         {
-            result[0] += numbersToMultiply[i] * numbersToMultiply[i + 1];
+            result.Value += numbersToMultiply[i] * numbersToMultiply[i + 1];
         }
     }
 }
