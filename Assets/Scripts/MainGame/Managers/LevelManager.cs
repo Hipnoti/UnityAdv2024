@@ -11,6 +11,9 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Transform targetTransform;
 
     private GameObject loadedSector;
+    private AsyncOperationHandle<GameObject> loadedSectorHandle;
+
+    
     public void LoadAndGenerateSector()
     {
         AsyncOperationHandle<GameObject> asyncOperation = Addressables.InstantiateAsync(sectorAsset, targetTransform.position, Quaternion.identity);
@@ -38,6 +41,19 @@ public class LevelManager : MonoBehaviour
     private void LoadAsyncComplete(AsyncOperationHandle<GameObject> asyncOperationHandle)
     {
         Debug.Log("Loading complete!");
-        loadedSector = asyncOperationHandle.Result;
+        if(asyncOperationHandle.Status == AsyncOperationStatus.Succeeded)
+        {
+            loadedSector = asyncOperationHandle.Result;
+            loadedSectorHandle = asyncOperationHandle;
+        }
+    }
+    
+    [ContextMenu("Unload Sector")]
+    private void UnloadSector()
+    {
+        Addressables.Release(loadedSectorHandle);
+        loadedSector = null;
+
+        Debug.Log("Sector unloaded.");
     }
 }
