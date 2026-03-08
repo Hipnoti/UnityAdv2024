@@ -17,6 +17,7 @@ public class PlayerCharacterController : MonoBehaviour
     
     [Header("Input")]
     [SerializeField] private InputActionAsset inputActionAsset;
+   // [SerializeField] private InputAction moveToAction;
     
     [Header("Navigation")] 
     [SerializeField] private NavMeshAgent navMeshAgent;
@@ -26,9 +27,9 @@ public class PlayerCharacterController : MonoBehaviour
     
     [SerializeField] Animator animator;
 
-    private InputActionMap inputActionMap;
+    // [SerializeField] private InputActionAsset inputActionMap;
 
-//    private InputSystem_Actions actions;
+    private InputSystem_Actions actions;
     
     public int Hp
     {
@@ -83,7 +84,7 @@ public class PlayerCharacterController : MonoBehaviour
         SetMudAreaCost();
         ToggleMoving(true);
         SetDestination(pathWaypoints[0]);
-      //  InitializeInputActions();
+        InitializeInputActions();
         // if (waypoint)
         // {
         //     SetDestination(waypoint);
@@ -118,6 +119,15 @@ public class PlayerCharacterController : MonoBehaviour
         if (animator)
             animator.SetFloat(SpeedAnimatorHash, navMeshAgent.velocity.magnitude);
 
+        // if (Mouse.current.leftButton.wasPressedThisFrame)
+        // {
+        //     Debug.Log("Left mouse button pressed and is moving there");
+        // }
+        //
+        // if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        // {
+        //     Debug.Log("Escape key pressed");
+        // }
     }
 
     private void PlayFootStepSound()
@@ -127,22 +137,22 @@ public class PlayerCharacterController : MonoBehaviour
 
     #region Input
 
-    // private void OnEnable()
-    // {
-    //     actions = new InputSystem_Actions();
-    //     actions.Player.Enable();
-    // }
+    private void OnEnable()
+    {
+       actions = new InputSystem_Actions();
+       actions.Enable();
+    }
     //
-    // private void InitializeInputActions()
-    // {
-    //     actions.Player.MoveTo.performed += MoveToAction;
-    // }
+    private void InitializeInputActions()
+    {
+       actions.Player.MoveTo.performed += MoveToAction;
+    }
     //
     //
-    // private void OnDisable()
-    // {
-    //     actions.Player.Disable();
-    // }
+    private void OnDisable()
+    {
+        actions.Disable();
+    }
 
     #endregion
 
@@ -155,7 +165,11 @@ public class PlayerCharacterController : MonoBehaviour
     //
     public void MoveToAction(InputAction.CallbackContext context)
     {
-       Debug.Log("Move to action");
+        Debug.Log(context.phase);
+        if (context.phase == InputActionPhase.Performed)
+        {
+            Debug.Log("Move action performed");
+        }
     }
     //
     // public void MoveActionVector(InputAction.CallbackContext context)
