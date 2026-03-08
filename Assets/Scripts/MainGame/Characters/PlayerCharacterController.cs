@@ -28,7 +28,7 @@ public class PlayerCharacterController : MonoBehaviour
 
     private InputActionMap inputActionMap;
 
-    private InputSystem_Actions actions;
+//    private InputSystem_Actions actions;
     
     public int Hp
     {
@@ -83,7 +83,7 @@ public class PlayerCharacterController : MonoBehaviour
         SetMudAreaCost();
         ToggleMoving(true);
         SetDestination(pathWaypoints[0]);
-        InitializeInputActions();
+      //  InitializeInputActions();
         // if (waypoint)
         // {
         //     SetDestination(waypoint);
@@ -127,22 +127,22 @@ public class PlayerCharacterController : MonoBehaviour
 
     #region Input
 
-    private void OnEnable()
-    {
-        actions = new InputSystem_Actions();
-        actions.Player.Enable();
-    }
-
-    private void InitializeInputActions()
-    {
-        actions.Player.MoveTo.performed += MoveToAction;
-    }
-    
-
-    private void OnDisable()
-    {
-        actions.Player.Disable();
-    }
+    // private void OnEnable()
+    // {
+    //     actions = new InputSystem_Actions();
+    //     actions.Player.Enable();
+    // }
+    //
+    // private void InitializeInputActions()
+    // {
+    //     actions.Player.MoveTo.performed += MoveToAction;
+    // }
+    //
+    //
+    // private void OnDisable()
+    // {
+    //     actions.Player.Disable();
+    // }
 
     #endregion
 
