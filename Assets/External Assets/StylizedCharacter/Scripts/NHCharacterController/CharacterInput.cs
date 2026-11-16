@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace NHance.Assets.Scripts
 {
@@ -13,7 +14,12 @@ namespace NHance.Assets.Scripts
         public void Update()
         {
             if (!_settings.IsEnabled)
-                Input.ResetInputAxes();
+            {
+                _settings.IsWalking = false;
+                _settings.IsSprinting = false;
+                _settings.MovementAxis = Vector2.zero;
+                return;
+            }
 
             Sprint();
             Walk();
@@ -23,30 +29,48 @@ namespace NHance.Assets.Scripts
 
         private void Walk()
         {
-            _settings.IsWalking = Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl);
+            var kb = Keyboard.current;
+            _settings.IsWalking = kb != null && (kb.leftCtrlKey.isPressed || kb.rightCtrlKey.isPressed);
         }
 
         private void Sprint()
         {
-            _settings.IsSprinting = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
+            var kb = Keyboard.current;
+            _settings.IsSprinting = kb != null && (kb.leftShiftKey.isPressed || kb.rightShiftKey.isPressed);
         }
 
         private void Jump()
         {
-            if (Input.GetButtonDown("Jump"))
+            var kb = Keyboard.current;
+            if (kb != null && kb.spaceKey.wasPressedThisFrame)
                 _settings.LastJumpButtonTime = Time.time;
         }
 
-        private void Movement()
+                private void Movement()
         {
-            if (Input.GetMouseButton(1))
+            var mouse = Mouse.current;
+            if (mouse != null && mouse.rightButton.isPressed)
             {
                 _settings.MovementAxis = Vector2.zero;
                 return;
             }
-            Vector2 playerInput;
-            playerInput.x = Input.GetAxis("Vertical");
-            playerInput.y = Input.GetAxis("Horizontal");
+
+            var kb = Keyboard.current;
+            if (kb == null)
+            {
+                _settings.MovementAxis = Vector2.zero;
+                return;
+            }
+
+            float vertical = 0f;
+            if (kb.wKey.isPressed) vertical += 1f;
+            if (kb.sKey.isPressed) vertical -= 1f;
+
+            float horizontal = 0f;
+            if (kb.dKey.isPressed) horizontal += 1f;
+            if (kb.aKey.isPressed) horizontal -= 1f;
+
+            Vector2 playerInput = new Vector2(vertical, horizontal);
             playerInput = Vector2.ClampMagnitude(playerInput, 1f);
             _settings.MovementAxis = playerInput;
         }

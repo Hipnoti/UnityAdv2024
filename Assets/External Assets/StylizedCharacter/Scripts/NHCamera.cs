@@ -1,9 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using NHance.Assets.Scripts;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace NHance.Assets
 {
@@ -71,24 +71,35 @@ namespace NHance.Assets
             lastFocusOffset = focusOffset;
         }
 
-        void Update()
-        {
-            UpdateFocusPoint();
-            Quaternion lookRotation;
-            lookRotation = _transform.localRotation;
-            Cursor.visible = !Input.GetMouseButton(0);
-            if (ManualRotation())
-            {
-                ConstrainAngles();
-                lookRotation = Quaternion.Euler(orbitAngles);
-            }
+		void Update()
+		{
+			
+			UpdateFocusPoint();
+			Quaternion lookRotation = _transform.localRotation;
 
-            FocusOffsetMove();
+			var mouse = Mouse.current;
+			var keyboard = Keyboard.current;
 
-            if (Input.mouseScrollDelta.y != 0)
-                targetDistance = Mathf.Clamp(targetDistance - Input.mouseScrollDelta.y / 5, minDistance, maxDistance);
+			bool lmb = mouse != null && mouse.leftButton.isPressed;
+			Cursor.visible = !lmb;
 
-            distance = Mathf.SmoothDamp(distance, targetDistance, ref zoomVelocity, 0.3f);
+			if (ManualRotation())
+			{
+				ConstrainAngles();
+				lookRotation = Quaternion.Euler(orbitAngles);
+			}
+
+			FocusOffsetMove();
+
+			if (mouse != null)
+			{
+				float scrollY = mouse.scroll.ReadValue().y; // обычно шаг = 120
+				if (Mathf.Abs(scrollY) > 0.01f)
+					targetDistance = Mathf.Clamp(targetDistance - (scrollY / 120f) / 5f, minDistance, maxDistance);
+			}
+
+
+			distance = Mathf.SmoothDamp(distance, targetDistance, ref zoomVelocity, 0.3f);
 
             Vector3 lookDirection = lookRotation * Vector3.forward;
             Vector3 lookPosition = focusPoint - lookDirection * distance;
@@ -127,35 +138,60 @@ namespace NHance.Assets
 
         bool ManualRotation()
         {
-            if (!Input.GetMouseButton(0)) return false;
+			var mouse = Mouse.current;
+				if (mouse == null || !mouse.leftButton.isPressed) return false;
 
-            Vector2 input = new Vector2(
-                -Input.GetAxis("Mouse Y"),
-                Input.GetAxis("Mouse X")
-            );
-            const float e = 0.001f;
-            if (input.x < -e || input.x > e || input.y < -e || input.y > e)
-            {
-                orbitAngles += rotationSpeed * Time.unscaledDeltaTime * input;
-                return true;
-            }
+				Vector2 d = mouse.delta.ReadValue(); // пиксели за кадр
+				Vector2 input = new Vector2(-d.y, d.x);
 
-            return false;
+				const float e = 0.001f;
+				if (input.x < -e || input.x > e || input.y < -e || input.y > e)
+				{
+					orbitAngles += rotationSpeed * Time.unscaledDeltaTime * input;
+					return true;
+				}
+				return false;
         }
 
         void FocusOffsetMove()
-        {
-            if (!(Input.GetMouseButton(1) || focus == null))
-            {
-                focusOffset = lastFocusOffset;
-                return;
-            }
-            var up = Input.GetAxis("Vertical") * _transform.forward * Time.deltaTime * flySpeed;
-            var right = Input.GetAxis("Horizontal") * _transform.right * Time.deltaTime * flySpeed;
-            var forward = (Input.GetKey(KeyCode.Q) ? -1 : Input.GetKey(KeyCode.E) ? 1 : 0) * _transform.up *
-                          Time.deltaTime * flySpeed;
-            focusOffset += up + right + forward;
-        }
+		{
+			var mouse = Mouse.current;
+			var keyboard = Keyboard.current;
+
+			bool rmb = mouse != null && mouse.rightButton.isPressed;
+			if (!(rmb || focus == null))
+			{
+				focusOffset = lastFocusOffset;
+				return;
+			}
+
+			float vertical = 0f;
+			float horizontal = 0f;
+
+			if (keyboard != null)
+			{
+				// Vertical (W/S)
+				if (keyboard.wKey.isPressed) vertical += 1f;
+				if (keyboard.sKey.isPressed) vertical -= 1f;
+
+				// Horizontal (A/D)
+				if (keyboard.dKey.isPressed) horizontal += 1f;
+				if (keyboard.aKey.isPressed) horizontal -= 1f;
+			}
+
+			var up = vertical * _transform.forward * Time.deltaTime * flySpeed;
+			var right = horizontal * _transform.right * Time.deltaTime * flySpeed;
+
+			float qe = 0f;
+			if (keyboard != null)
+			{
+				if (keyboard.qKey.isPressed) qe -= 1f;
+				if (keyboard.eKey.isPressed) qe += 1f;
+			}
+
+			var forward = qe * _transform.up * Time.deltaTime * flySpeed;
+			focusOffset += up + right + forward;
+		}
 
         void ConstrainAngles()
         {
