@@ -17,6 +17,8 @@ public class SaveGameManager : MonoBehaviour
     public void SaveGame()
     {
         serializedSaveGame = new SerializedSaveGame();
+
+        serializedSaveGame.gameVersion = 0.1f;
         // serializedSaveGame.playerPosition = gameManager.playerCharacterController.transform.position;
         // serializedSaveGame.playerRotation = gameManager.playerCharacterController.transform.eulerAngles;
         serializedSaveGame.playerPositionX = gameManager.playerCharacterController.transform.position.x;
@@ -30,14 +32,14 @@ public class SaveGameManager : MonoBehaviour
         serializedSaveGame.playerHPNew = gameManager.playerCharacterController.Hp;
         serializedSaveGame.currentWaypointIndex = gameManager.playerCharacterController.CurrentWaypointIndex;
         
-          //  SaveToJson();
+         //   SaveToJson();
          SaveToBinary();
     }
 
     [ContextMenu("Load!")]
     public void LoadGame()
     {
-       // LoadFromJson();
+    //    LoadFromJson();
 
          LoadFromBinary();
         
@@ -70,23 +72,25 @@ public class SaveGameManager : MonoBehaviour
 
     private void SaveToBinary()
     {
-        FileStream fileStream = new FileStream(Application.persistentDataPath
-                                               + SAVE_FILE_NAME, FileMode.Create);
-        BinaryFormatter converter = new BinaryFormatter();
-        converter.Serialize(fileStream, serializedSaveGame);
-        fileStream.Close();
+        string path = Application.persistentDataPath + SAVE_FILE_NAME;
+        using (FileStream fileStream = new FileStream(path, FileMode.Create))
+        using (BinaryWriter writer = new BinaryWriter(fileStream))
+        {
+            serializedSaveGame.Serialize(writer);
+        }
     }
 
     private void LoadFromBinary()
     {
-        if (File.Exists(Application.persistentDataPath + SAVE_FILE_NAME))
+        string path = Application.persistentDataPath + SAVE_FILE_NAME;
+        if (File.Exists(path))
         {
-            FileStream fileStream = new FileStream(Application.persistentDataPath + SAVE_FILE_NAME, FileMode.Open);
-
-            BinaryFormatter converter = new BinaryFormatter();
-            serializedSaveGame = converter.Deserialize(fileStream) as SerializedSaveGame;
-
-            fileStream.Close();
+            using (FileStream fileStream = new FileStream(path, FileMode.Open))
+            using (BinaryReader reader = new BinaryReader(fileStream))
+            {
+                serializedSaveGame = new SerializedSaveGame();
+                serializedSaveGame.Deserialize(reader);
+            }
         }
     }
 }
