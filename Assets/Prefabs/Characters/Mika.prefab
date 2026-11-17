@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 8442499822739766688}
   - component: {fileID: 2974763104239887291}
   m_Layer: 0
-  m_Name: Pibble
+  m_Name: Mika
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -323,6 +323,7 @@ MonoBehaviour:
   waypoint: {fileID: 0}
   pathWaypoints: []
   moveOnStart: 1
+  hasFurBalls: 0
 --- !u!1 &1921977085086819228
 GameObject:
   m_ObjectHideFlags: 0

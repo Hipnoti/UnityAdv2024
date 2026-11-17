@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 5262520664344185964}
   - component: {fileID: 828648491150709437}
   m_Layer: 0
-  m_Name: Bibble
+  m_Name: Shmulik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
