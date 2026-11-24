@@ -39,7 +39,7 @@ public class PlayerCharacterController : MonoBehaviour
 
     private bool hasBloodyBoots = true;
 
-    private int hp = 100;
+    private int hp = 1001;
     private int startingHp;
 
     public void ToggleMoving(bool shouldMove)

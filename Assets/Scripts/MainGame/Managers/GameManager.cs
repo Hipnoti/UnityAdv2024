@@ -16,31 +16,32 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         //C# actions
-        // foreach (FireHazard fireHazard in fireHazards)
-        // {
-        //     fireHazard.fireHazardData = 
-        //         fireHazardScriptableObjects[Random.Range(0, fireHazardScriptableObjects.Length)];
-        //  //   fireHazard.onCharacterEntered += HandleCharacterEnteredFire;
-        // }
+        foreach (FireHazard fireHazard in fireHazards)
+        {
+            // fireHazard.fireHazardData = 
+            //     fireHazardScriptableObjects[Random.Range(0, fireHazardScriptableObjects.Length)];
+             fireHazard.onCharacterEnteredAction += HandleCharacterEnteredFire;
+         }
         //Unity Actions
         foreach (FireHazard fireHazard in fireHazards)
         {
             // fireHazard.fireHazardData = 
             //     fireHazardScriptableObjects[Random.Range(0, fireHazardScriptableObjects.Length)];
-           // fireHazard.onCharacterEntered.AddListener(HandleCharacterEnteredFire);
+         //   fireHazard.onCharacterEntered.AddListener(HandleCharacterEnteredFire);
         }
       
     }
     
 
-    public void HandleCharacterEnteredFire()
-    {
-        playerCharacterController.TakeDamage(10);
-    }
-
-    // public void HandleCharacterEnteredFire(FireEnteredEventArgs args)
+    // public void HandleCharacterEnteredFire(int damageDealt)
     // {
-    //     args.targetCharacterController.TakeDamage(args.damageDealt);
+    //     //Formula for changing the damage dealt
+    //     playerCharacterController.TakeDamage(damageDealt);
     // }
+
+    public void HandleCharacterEnteredFire(FireEnteredEventArgs args)
+    {
+        args.targetCharacterController.TakeDamage(args.damageDealt);
+    }
     
 }
