@@ -59,7 +59,7 @@ namespace NHance.Assets.Scripts
 
                 var view = new GUIContent(i.name, AssetPreview.GetMiniThumbnail(i.gameObject));
 
-                if (_currentObject == null && obj != null && obj.GetInstanceID() == i.GetInstanceID())
+				if (_currentObject == null && obj && obj == i)
                 {
                     _currentObject = view;
                     _selected = _activeItems.Count;
